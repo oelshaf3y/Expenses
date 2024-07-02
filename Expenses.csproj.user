@@ -7,6 +7,32 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="AddCategory.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddRecord.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddSubCat.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddUser.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AddCategory.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddRecord.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddSubCat.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddUser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>

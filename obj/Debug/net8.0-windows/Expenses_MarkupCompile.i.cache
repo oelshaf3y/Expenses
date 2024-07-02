@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\Omar.Elshafey\source\repos\oelshaf3y\Expenses\App.xaml
-11407045341
+5995445547
 
-6-1428811605
+15-1981616953
 198-1509178875
-MainWindow.xaml;
+AddCategory.xaml;AddRecord.xaml;AddSubCat.xaml;AddUser.xaml;MainWindow.xaml;
 
-False
+True
 

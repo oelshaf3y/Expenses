@@ -1,0 +1,67 @@
+﻿{
+  "categories": [
+    {
+      "parent": null,
+      "name": "Groceries",
+      "description": "Any thing to cook",
+      "children": [
+        {
+          "parent": "Groceries",
+          "name": "Vegetables",
+          "description": "Anything from the  veg market",
+          "children": [],
+          "items": [
+            {
+              "name": "مانجو",
+              "value": 160,
+              "index": -1,
+              "parent": "Groceries.Vegetables",
+              "date": "2024-07-02T00:00:00+03:00",
+              "user": {
+                "name": "Omar"
+              }
+            },
+            {
+              "name": "مانجو",
+              "value": 35,
+              "index": -1,
+              "parent": "Groceries.Vegetables",
+              "date": "2024-07-02T00:00:00+03:00",
+              "user": {
+                "name": "Omar"
+              }
+            }
+          ]
+        }
+      ],
+      "items": []
+    },
+    {
+      "parent": null,
+      "name": "Salary",
+      "description": "",
+      "children": [],
+      "items": [
+        {
+          "name": "Salary",
+          "value": 24000,
+          "index": 1,
+          "parent": "Salary",
+          "date": "2024-07-02T00:00:00+03:00",
+          "user": {
+            "name": "Omar"
+          }
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "name": "Omar"
+    },
+    {
+      "name": "Nesma"
+    }
+  ],
+  "currentUser": null
+}

@@ -7,6 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Button Content="Add Category" Margin="0,47,30,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="83" Click="Button_Click"/>
+        <Button Content="Add Sub Category" HorizontalAlignment="Left" Margin="658,84,0,0" VerticalAlignment="Top" Width="110" Click="Button_Click_1"/>
+        <Button Content="Add Record" HorizontalAlignment="Left" Margin="658,123,0,0" VerticalAlignment="Top" Width="110" Click="Button_Click_2"/>
+        <Button Content="Add User" HorizontalAlignment="Left" Margin="658,169,0,0" VerticalAlignment="Top" Width="112" Click="Button_Click_3"/>
+        <Label Content="User" HorizontalAlignment="Left" Margin="43,34,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="combobox1" HorizontalAlignment="Left" Margin="43,64,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Choose" HorizontalAlignment="Left" Margin="191,65,0,0" VerticalAlignment="Top" Click="Button_Click_4"/>
+        <DataGrid x:Name="datagrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="43,115,253,31"/>
+        <Label x:Name="currentLabel" Content="Label" HorizontalAlignment="Left" Margin="276,21,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="incomeLabel" Content="Label" HorizontalAlignment="Left" Margin="276,49,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="paidLable" Content="Label" HorizontalAlignment="Left" Margin="276,75,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
