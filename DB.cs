@@ -36,6 +36,13 @@ namespace Expenses
         {
             if (File.Exists(DbFileName))
             {
+                //JsonSerializerOptions options = new JsonSerializerOptions
+                //{
+                //    PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+                //    IgnoreNullValues = true,
+                //    PropertyNameCaseInsensitive = true,
+                //    Converters = { new JsonStringEnumConverter(JsonNamingPolicy.CamelCase) }
+                //};
                 string jsonString = await File.ReadAllTextAsync(DbFileName, Encoding.UTF8);
                 var loadedDB = JsonSerializer.Deserialize<DB>(jsonString);
                 categories = loadedDB.categories;

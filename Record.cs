@@ -5,27 +5,35 @@ using System.Security.Policy;
 using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
 
 namespace Expenses
 {
+
+    public enum cashFlow { Expense, Income }
     class Record
     {
-        public string name { get; set; }
-        public double value { get; set; }
-        public int index { get; set; }
-        public string parent { get; set; }
-        public DateTime date { get; set; } 
-        public User user { get; set; }
+        public string Info { get; set; }
+        public double Value { get; set; }
+        public cashFlow Transaction { get; set; }
+        public string Category { get; set; }
+        public DateTime Date { get; set; }
+        public User User { get; set; }
+        public ShoppingList GroceryList { get; set; }
 
         [JsonConstructor]
-        public Record(string name, double value, string parent,DateTime date, int index = -1)
+        public Record(string info, double value, string parent, DateTime date, cashFlow transaction, User user,
+            ShoppingList? GroceryList = null)
         {
-            this.name = name;
-            this.value = value;
-            this.index = index;
-            this.parent = parent;
-            this.date = date;
-            this.user = DB.Instance.currentUser;
+            this.Info = info;
+            this.Value = value;
+            this.Transaction = transaction;
+            this.Category = parent;
+            this.Date = date;
+            this.User = user;
+            this.GroceryList = GroceryList;
         }
+
     }
 }
