@@ -68,8 +68,8 @@ namespace Expenses
             DB.Instance.currentUser = DB.Instance.users[combobox1.SelectedIndex];
             List<Record> records = getItems(DB.Instance.categories);
             datagrid.ItemsSource=records;
-            double income = records.Where(x => x.index == 1).Select(x => x.value).Sum();
-            double payments = records.Where(x => x.index == -1).Select(x => x.value).Sum();
+            double income = records.Where(x => x.Transaction ==cashFlow.Income).Select(x => x.Value).Sum();
+            double payments = records.Where(x => x.Transaction == cashFlow.Expense).Select(x => x.Value).Sum();
             double current =income - payments;
             currentLabel.Content = "current: "+current.ToString();
             paidLable.Content = "Paid: "+payments.ToString();
@@ -82,7 +82,7 @@ namespace Expenses
             {
                 if (cat.items.Count > 0)
                 {
-                    records.AddRange(cat.items.Where(x => x.user.name == DB.Instance.currentUser.name));
+                    records.AddRange(cat.items.Where(x => x.User.name == DB.Instance.currentUser.name));
                 }
                 if (cat.children.Count > 0)
                 {

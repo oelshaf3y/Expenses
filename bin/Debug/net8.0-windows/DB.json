@@ -10,49 +10,36 @@
           "name": "Vegetables",
           "description": "Anything from the  veg market",
           "children": [],
-          "items": [
-            {
-              "name": "مانجو",
-              "value": 160,
-              "index": -1,
-              "parent": "Groceries.Vegetables",
-              "date": "2024-07-02T00:00:00+03:00",
-              "user": {
-                "name": "Omar"
-              }
-            },
-            {
-              "name": "مانجو",
-              "value": 35,
-              "index": -1,
-              "parent": "Groceries.Vegetables",
-              "date": "2024-07-02T00:00:00+03:00",
-              "user": {
-                "name": "Omar"
-              }
-            }
-          ]
+          "items": []
         }
       ],
-      "items": []
+      "items": [
+        {
+          "Info": "s",
+          "Value": 20,
+          "Transaction": 0,
+          "Category": "Groceries",
+          "Date": "2024-07-03T00:00:00+03:00",
+          "User": {
+            "name": "Omar"
+          },
+          "GroceryList": null
+        }
+      ]
     },
     {
       "parent": null,
       "name": "Salary",
       "description": "",
       "children": [],
-      "items": [
-        {
-          "name": "Salary",
-          "value": 24000,
-          "index": 1,
-          "parent": "Salary",
-          "date": "2024-07-02T00:00:00+03:00",
-          "user": {
-            "name": "Omar"
-          }
-        }
-      ]
+      "items": []
+    },
+    {
+      "parent": null,
+      "name": "العاب",
+      "description": "العاب عدى بيه",
+      "children": [],
+      "items": []
     }
   ],
   "users": [
@@ -61,6 +48,9 @@
     },
     {
       "name": "Nesma"
+    },
+    {
+      "name": "عدى"
     }
   ],
   "currentUser": null

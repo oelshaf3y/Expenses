@@ -1,50 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Omar.Elshafey\\source\\repos\\oelshaf3y\\Expenses\\",
+  "WorkspaceRootPath": "C:\\Users\\oelsh\\source\\repos\\oelshaf3y\\Expenses\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|c:\\users\\omar.elshafey\\source\\repos\\oelshaf3y\\expenses\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|c:\\users\\omar.elshafey\\source\\repos\\oelshaf3y\\expenses\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|c:\\users\\omar.elshafey\\source\\repos\\oelshaf3y\\expenses\\addrecord.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|solutionrelative:addrecord.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|c:\\users\\omar.elshafey\\source\\repos\\oelshaf3y\\expenses\\addsubcat.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|solutionrelative:addsubcat.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|c:\\users\\omar.elshafey\\source\\repos\\oelshaf3y\\expenses\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|solutionrelative:user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|c:\\users\\omar.elshafey\\source\\repos\\oelshaf3y\\expenses\\db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|solutionrelative:db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|c:\\users\\omar.elshafey\\source\\repos\\oelshaf3y\\expenses\\balance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|solutionrelative:balance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|c:\\users\\omar.elshafey\\source\\repos\\oelshaf3y\\expenses\\addrecord.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|solutionrelative:addrecord.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|c:\\users\\omar.elshafey\\source\\repos\\oelshaf3y\\expenses\\record.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|c:\\users\\oelsh\\source\\repos\\oelshaf3y\\expenses\\record.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|solutionrelative:record.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|c:\\users\\omar.elshafey\\source\\repos\\oelshaf3y\\expenses\\adduser.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|solutionrelative:adduser.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|c:\\users\\oelsh\\source\\repos\\oelshaf3y\\expenses\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|solutionrelative:category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|c:\\users\\omar.elshafey\\source\\repos\\oelshaf3y\\expenses\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|solutionrelative:category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|c:\\users\\oelsh\\source\\repos\\oelshaf3y\\expenses\\addgrocerylist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|solutionrelative:addgrocerylist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|c:\\users\\oelsh\\source\\repos\\oelshaf3y\\expenses\\addgrocerylist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|solutionrelative:addgrocerylist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|c:\\users\\oelsh\\source\\repos\\oelshaf3y\\expenses\\shoppinglist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|solutionrelative:shoppinglist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|c:\\users\\oelsh\\source\\repos\\oelshaf3y\\expenses\\addrecord.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|solutionrelative:addrecord.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|c:\\users\\oelsh\\source\\repos\\oelshaf3y\\expenses\\addrecord.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|solutionrelative:addrecord.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|c:\\users\\oelsh\\source\\repos\\oelshaf3y\\expenses\\db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|solutionrelative:db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|c:\\users\\oelsh\\source\\repos\\oelshaf3y\\expenses\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16C7B983-93F9-4DEE-8611-DBDB2D6F6DEC}|Expenses.csproj|solutionrelative:user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -69,90 +61,65 @@
               "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Omar.Elshafey\\source\\repos\\oelshaf3y\\Expenses\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Omar.Elshafey\\source\\repos\\oelshaf3y\\Expenses\\MainWindow.xaml",
-              "RelativeToolTip": "MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-02T12:59:00.664Z",
-              "EditorCaption": ""
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\oelsh\\source\\repos\\oelshaf3y\\Expenses\\Category.cs",
+              "RelativeDocumentMoniker": "Category.cs",
+              "ToolTip": "C:\\Users\\oelsh\\source\\repos\\oelshaf3y\\Expenses\\Category.cs",
+              "RelativeToolTip": "Category.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwA8AAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T20:45:11.592Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AddRecord.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Omar.Elshafey\\source\\repos\\oelshaf3y\\Expenses\\AddRecord.xaml.cs",
-              "RelativeDocumentMoniker": "AddRecord.xaml.cs",
-              "ToolTip": "C:\\Users\\Omar.Elshafey\\source\\repos\\oelshaf3y\\Expenses\\AddRecord.xaml.cs",
-              "RelativeToolTip": "AddRecord.xaml.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAADwvywAAABGAAAA",
+              "Title": "AddGroceryList.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\oelsh\\source\\repos\\oelshaf3y\\Expenses\\AddGroceryList.xaml.cs",
+              "RelativeDocumentMoniker": "AddGroceryList.xaml.cs",
+              "ToolTip": "C:\\Users\\oelsh\\source\\repos\\oelshaf3y\\Expenses\\AddGroceryList.xaml.cs",
+              "RelativeToolTip": "AddGroceryList.xaml.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAA5wDUAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T13:44:11.616Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-02T19:26:34.11Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AddRecord.xaml",
-              "DocumentMoniker": "C:\\Users\\Omar.Elshafey\\source\\repos\\oelshaf3y\\Expenses\\AddRecord.xaml",
-              "RelativeDocumentMoniker": "AddRecord.xaml",
-              "ToolTip": "C:\\Users\\Omar.Elshafey\\source\\repos\\oelshaf3y\\Expenses\\AddRecord.xaml",
-              "RelativeToolTip": "AddRecord.xaml",
+              "DocumentIndex": 3,
+              "Title": "AddGroceryList.xaml",
+              "DocumentMoniker": "C:\\Users\\oelsh\\source\\repos\\oelshaf3y\\Expenses\\AddGroceryList.xaml",
+              "RelativeDocumentMoniker": "AddGroceryList.xaml",
+              "ToolTip": "C:\\Users\\oelsh\\source\\repos\\oelshaf3y\\Expenses\\AddGroceryList.xaml",
+              "RelativeToolTip": "AddGroceryList.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-02T13:42:15.113Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-02T19:12:10.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ShoppingList.cs",
+              "DocumentMoniker": "C:\\Users\\oelsh\\source\\repos\\oelshaf3y\\Expenses\\ShoppingList.cs",
+              "RelativeDocumentMoniker": "ShoppingList.cs",
+              "ToolTip": "C:\\Users\\oelsh\\source\\repos\\oelshaf3y\\Expenses\\ShoppingList.cs",
+              "RelativeToolTip": "ShoppingList.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAiwBIAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T18:48:28.942Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Omar.Elshafey\\source\\repos\\oelshaf3y\\Expenses\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Omar.Elshafey\\source\\repos\\oelshaf3y\\Expenses\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AQIAAD4AAAAAAAAAAAAmwE4AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T13:04:44.436Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AddUser.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Omar.Elshafey\\source\\repos\\oelshaf3y\\Expenses\\AddUser.xaml.cs",
-              "RelativeDocumentMoniker": "AddUser.xaml.cs",
-              "ToolTip": "C:\\Users\\Omar.Elshafey\\source\\repos\\oelshaf3y\\Expenses\\AddUser.xaml.cs",
-              "RelativeToolTip": "AddUser.xaml.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAEwBcAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T13:03:23.703Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Balance.cs",
-              "DocumentMoniker": "C:\\Users\\Omar.Elshafey\\source\\repos\\oelshaf3y\\Expenses\\Balance.cs",
-              "RelativeDocumentMoniker": "Balance.cs",
-              "ToolTip": "C:\\Users\\Omar.Elshafey\\source\\repos\\oelshaf3y\\Expenses\\Balance.cs",
-              "RelativeToolTip": "Balance.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T13:32:49.85Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "Record.cs",
-              "DocumentMoniker": "C:\\Users\\Omar.Elshafey\\source\\repos\\oelshaf3y\\Expenses\\Record.cs",
+              "DocumentMoniker": "C:\\Users\\oelsh\\source\\repos\\oelshaf3y\\Expenses\\Record.cs",
               "RelativeDocumentMoniker": "Record.cs",
-              "ToolTip": "C:\\Users\\Omar.Elshafey\\source\\repos\\oelshaf3y\\Expenses\\Record.cs",
+              "ToolTip": "C:\\Users\\oelsh\\source\\repos\\oelshaf3y\\Expenses\\Record.cs",
               "RelativeToolTip": "Record.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAxwBkAAAAhAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAvwBYAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-02T12:55:08.647Z",
               "EditorCaption": ""
@@ -160,54 +127,49 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "AddRecord.xaml",
+              "DocumentMoniker": "C:\\Users\\oelsh\\source\\repos\\oelshaf3y\\Expenses\\AddRecord.xaml",
+              "RelativeDocumentMoniker": "AddRecord.xaml",
+              "ToolTip": "C:\\Users\\oelsh\\source\\repos\\oelshaf3y\\Expenses\\AddRecord.xaml",
+              "RelativeToolTip": "AddRecord.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-02T13:42:15.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddRecord.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\oelsh\\source\\repos\\oelshaf3y\\Expenses\\AddRecord.xaml.cs",
+              "RelativeDocumentMoniker": "AddRecord.xaml.cs",
+              "ToolTip": "C:\\Users\\oelsh\\source\\repos\\oelshaf3y\\Expenses\\AddRecord.xaml.cs",
+              "RelativeToolTip": "AddRecord.xaml.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAkwDMAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T19:17:33.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "DB.cs",
-              "DocumentMoniker": "C:\\Users\\Omar.Elshafey\\source\\repos\\oelshaf3y\\Expenses\\DB.cs",
+              "DocumentMoniker": "C:\\Users\\oelsh\\source\\repos\\oelshaf3y\\Expenses\\DB.cs",
               "RelativeDocumentMoniker": "DB.cs",
-              "ToolTip": "C:\\Users\\Omar.Elshafey\\source\\repos\\oelshaf3y\\Expenses\\DB.cs",
+              "ToolTip": "C:\\Users\\oelsh\\source\\repos\\oelshaf3y\\Expenses\\DB.cs",
               "RelativeToolTip": "DB.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAnwCcAAAAQAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAAnwC4AAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T11:55:15.494Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-02T11:55:15.494Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\Omar.Elshafey\\source\\repos\\oelshaf3y\\Expenses\\Category.cs",
-              "RelativeDocumentMoniker": "Category.cs",
-              "ToolTip": "C:\\Users\\Omar.Elshafey\\source\\repos\\oelshaf3y\\Expenses\\Category.cs",
-              "RelativeToolTip": "Category.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAADgvwwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T12:04:04.909Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Omar.Elshafey\\source\\repos\\oelshaf3y\\Expenses\\User.cs",
+              "DocumentMoniker": "C:\\Users\\oelsh\\source\\repos\\oelshaf3y\\Expenses\\User.cs",
               "RelativeDocumentMoniker": "User.cs",
-              "ToolTip": "C:\\Users\\Omar.Elshafey\\source\\repos\\oelshaf3y\\Expenses\\User.cs",
+              "ToolTip": "C:\\Users\\oelsh\\source\\repos\\oelshaf3y\\Expenses\\User.cs",
               "RelativeToolTip": "User.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAkAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T12:55:20.799Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AddSubCat.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Omar.Elshafey\\source\\repos\\oelshaf3y\\Expenses\\AddSubCat.xaml.cs",
-              "RelativeDocumentMoniker": "AddSubCat.xaml.cs",
-              "ToolTip": "C:\\Users\\Omar.Elshafey\\source\\repos\\oelshaf3y\\Expenses\\AddSubCat.xaml.cs",
-              "RelativeToolTip": "AddSubCat.xaml.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAADgvyMAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T11:52:38.817Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-02T21:17:23.64Z"
             }
           ]
         }

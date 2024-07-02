@@ -22,5 +22,9 @@ namespace Expenses
             if (index == 1) Balance.addBalance(value);
             else Balance.pay(value);
         }
+        public override string ToString()
+        {
+            return name;
+        }
     }
 }

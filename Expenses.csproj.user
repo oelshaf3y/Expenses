@@ -10,6 +10,9 @@
     <Compile Update="AddCategory.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="AddGroceryList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="AddRecord.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -22,6 +25,9 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="AddCategory.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddGroceryList.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="AddRecord.xaml">
