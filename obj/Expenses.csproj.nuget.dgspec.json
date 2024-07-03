@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\oelsh\\source\\repos\\oelshaf3y\\Expenses\\Expenses.csproj": {}
+    "C:\\Users\\Omar.Elshafey\\source\\repos\\oelshaf3y\\Expenses\\Expenses.csproj": {}
   },
   "projects": {
-    "C:\\Users\\oelsh\\source\\repos\\oelshaf3y\\Expenses\\Expenses.csproj": {
+    "C:\\Users\\Omar.Elshafey\\source\\repos\\oelshaf3y\\Expenses\\Expenses.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\oelsh\\source\\repos\\oelshaf3y\\Expenses\\Expenses.csproj",
+        "projectUniqueName": "C:\\Users\\Omar.Elshafey\\source\\repos\\oelshaf3y\\Expenses\\Expenses.csproj",
         "projectName": "Expenses",
-        "projectPath": "C:\\Users\\oelsh\\source\\repos\\oelshaf3y\\Expenses\\Expenses.csproj",
-        "packagesPath": "C:\\Users\\oelsh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\oelsh\\source\\repos\\oelshaf3y\\Expenses\\obj\\",
+        "projectPath": "C:\\Users\\Omar.Elshafey\\source\\repos\\oelshaf3y\\Expenses\\Expenses.csproj",
+        "packagesPath": "C:\\Users\\Omar.Elshafey\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Omar.Elshafey\\source\\repos\\oelshaf3y\\Expenses\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\oelsh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Omar.Elshafey\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0-windows"
+          "net8.0-windows7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -26,7 +26,7 @@
         },
         "frameworks": {
           "net8.0-windows7.0": {
-            "targetAlias": "net8.0-windows",
+            "targetAlias": "net8.0-windows7.0",
             "projectReferences": {}
           }
         },
@@ -43,7 +43,7 @@
       },
       "frameworks": {
         "net8.0-windows7.0": {
-          "targetAlias": "net8.0-windows",
+          "targetAlias": "net8.0-windows7.0",
           "imports": [
             "net461",
             "net462",
@@ -63,7 +63,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

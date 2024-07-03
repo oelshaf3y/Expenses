@@ -9,15 +9,14 @@ namespace Expenses
 {
     class Category
     {
-        public string parent { get; set; } = null;
         public string name { get; set; }
         public string description { get; set; }
         public List<Category> children { get; set; } = new List<Category>();
         public List<Record> items { get; set; } = new List<Record>();
+        public string parent { get; set; } = null;
         [JsonConstructor]
         public Category(string name, string description = null, List<Category> children = null, List<Record> items = null, string parent = null)
         {
-            this.parent = parent;
             this.name = name;
             this.description = description;
 
@@ -25,6 +24,7 @@ namespace Expenses
             else this.children = children;
             if (items == null) this.items = new List<Record>();
             else this.items = items;
+            this.parent = parent;
         }
         public string getFullName()
         {

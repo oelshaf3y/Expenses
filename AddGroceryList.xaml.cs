@@ -51,7 +51,7 @@ namespace Expenses
 
         private void Save(object sender, RoutedEventArgs e)
         {
-            parent.items.AddRange(items.ToList());
+            parent.items = items.ToList();
             parent.Value = items.Select(x => x.Value * x.Count).Sum();
             this.Close();
         }

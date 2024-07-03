@@ -7,21 +7,20 @@ using System.Threading.Tasks;
 
 namespace Expenses
 {
-    class User
+    public class Person
     {
         public string name { get; set; }
-        private string password { get; set; }
-        private Balance Balance { get; set; }
+        //private Balance Balance { get; set; }
         [JsonConstructor]
-        public User(string name)
+        public Person(string name)
         {
             this.name = name;
         }
-        public void adjustBalance(int index,double value)
-        {
-            if (index == 1) Balance.addBalance(value);
-            else Balance.pay(value);
-        }
+        //public void adjustBalance(int index,double value)
+        //{
+        //    if (index == 1) Balance.addBalance(value);
+        //    else Balance.pay(value);
+        //}
         public override string ToString()
         {
             return name;

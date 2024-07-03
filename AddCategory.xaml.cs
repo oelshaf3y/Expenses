@@ -31,6 +31,12 @@ namespace Expenses
             Category cat = new Category(textBox1.Text, textBox2.Text);
             DB.Instance.categories.Add(cat);
             DB.Instance.sync();
+            this.Close();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

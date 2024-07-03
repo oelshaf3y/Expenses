@@ -26,7 +26,7 @@ namespace Expenses
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            DB.Instance.users.Add(new User(textbox1.Text));
+            DB.Instance.users.Add(new Person(textbox1.Text));
             DB.Instance.sync();
             MainWindow mm = new MainWindow();
             mm.Show();

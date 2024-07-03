@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Transactions;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -21,14 +22,42 @@ namespace Expenses
     public partial class AddRecord : Window
     {
         public ShoppingList list { get; set; }
+        private bool isEditable = false;
+        Record record;
         public AddRecord()
         {
             InitializeComponent();
+            checkbox1.IsChecked = true;
             combobox1.ItemsSource = DB.flatten(DB.Instance.categories).Select(x => x.getFullName());
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        public AddRecord(Record record)
         {
+            this.record = record;
+            isEditable = true;
+            InitializeComponent();
+            List<string> cats = DB.flatten(DB.Instance.categories).Select(x => x.getFullName()).ToList();
+            combobox1.ItemsSource = cats;
+            combobox1.SelectedIndex = cats.IndexOf(record.Category);
+            textBox1.Text = record.Info;
+            textbox2.Text = record.Value.ToString();
+            checkbox1.IsChecked = false;
+            checkbox1.Visibility = Visibility.Hidden;
+            datePicker.SelectedDate = record.Date;
+            if (record.Transaction == cashFlow.Income) income.IsChecked = true;
+            if (record.GroceryList != null)
+            {
+                this.list = record.GroceryList;
+                dataGrid.ItemsSource = list.items;
+                textbox2.Text = list.Value.ToString();
+                textbox2.IsEnabled = false;
+                addListBut.Content = "Edit List";
+            }
+        }
+
+        private void SaveRecord(object sender, RoutedEventArgs e)
+        {
+            if (combobox1.SelectedIndex == -1) { MessageBox.Show("Please select a category!"); return; }
             if (textBox1.Text.Length == 0 || textBox1.Text == null)
             {
                 MessageBox.Show("Please Enter the Info!");
@@ -47,9 +76,24 @@ namespace Expenses
             if (double.TryParse(textbox2.Text, out double result))
             {
                 Category category = DB.flatten(DB.Instance.categories)[combobox1.SelectedIndex];
-                if (income.IsChecked == true) transaction = cashFlow.Income;
-                category.AddItem(
-                    new Record(textBox1.Text, result, category.getFullName(), date.Date, transaction, DB.Instance.currentUser, list));
+                if (isEditable)
+                {
+                    record.Info = textBox1.Text;
+                    record.Value = result;
+                    record.Category = category.getFullName();
+                    record.Date = date;
+                    record.Transaction = transaction;
+                    record.GroceryList = list;
+                }
+                else
+                {
+
+                    if (income.IsChecked == true) transaction = cashFlow.Income;
+                    category.AddItem(
+                        new Record(textBox1.Text, result, category.getFullName(), date.Date, transaction, DB.Instance.currentUser,
+                        list)
+                        );
+                }
                 //DB.Instance.currentUser.adjustBalance(index,result);
                 DB.Instance.sync();
                 this.Close();
@@ -98,6 +142,19 @@ namespace Expenses
                 dataGrid.ItemsSource = list.items;
                 addListBut.Content = "Edit List";
             }
+            else
+            {
+                textbox2.Text = "";
+                textbox2.IsEnabled = true ;
+                dataGrid.ItemsSource = list.items;
+                list = null;
+                addListBut.Content = "Add List";
+            }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

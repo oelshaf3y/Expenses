@@ -58,3 +58,5 @@ C:\Users\oelsh\Source\Repos\oelshaf3y\Expenses\obj\Debug\net8.0-windows\Expenses
 C:\Users\oelsh\Source\Repos\oelshaf3y\Expenses\obj\Debug\net8.0-windows\ref\Expenses.dll
 C:\Users\oelsh\Source\Repos\oelshaf3y\Expenses\obj\Debug\net8.0-windows\AddGroceryList.g.cs
 C:\Users\oelsh\Source\Repos\oelshaf3y\Expenses\obj\Debug\net8.0-windows\AddGroceryList.baml
+C:\Users\Omar.Elshafey\source\repos\oelshaf3y\Expenses\obj\Debug\net8.0-windows\AddGroceryList.g.cs
+C:\Users\Omar.Elshafey\source\repos\oelshaf3y\Expenses\obj\Debug\net8.0-windows\AddGroceryList.baml

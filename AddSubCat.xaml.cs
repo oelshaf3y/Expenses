@@ -31,6 +31,12 @@ namespace Expenses
             category = DB.flatten(DB.Instance.categories)[combobox1.SelectedIndex];
             category.AddSubCategory(new Category( textBox1.Text, textBox2.Text, parent: category.name));
             DB.Instance.sync();
+            this.Close();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

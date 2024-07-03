@@ -19,13 +19,13 @@ namespace Expenses
         private static readonly Lazy<DB> instance = new Lazy<DB>(() => new DB());
         public static DB Instance => instance.Value;
         public List<Category> categories { get; set; } = new List<Category>();
-        public List<User> users { get; set; } = new List<User>();
+        public List<Person> users { get; set; } = new List<Person>();
 
-        public User currentUser { get; set; }
+        public Person currentUser { get; set; }
         private DB() { }
 
         [JsonConstructor]
-        private DB(List<Category> categories, List<User> users,User currentUser)
+        private DB(List<Category> categories, List<Person> users,Person currentUser)
         {
             this.categories = categories;
             this.users = users;

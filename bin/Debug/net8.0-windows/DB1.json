@@ -1,0 +1,56 @@
+﻿{
+  "categories": [
+    {
+      "parent": null,
+      "name": "Groceries",
+      "description": "Any thing to cook",
+      "children": [
+        {
+          "parent": "Groceries",
+          "name": "Vegetables",
+          "description": "Anything from the  veg market",
+          "children": [],
+          "items": []
+        }
+      ],
+      "items": [
+        {
+          "Info": "s",
+          "Value": 20,
+          "Transaction": 0,
+          "Category": "Groceries",
+          "Date": "2024-07-03T00:00:00+03:00",
+          "User": {
+            "name": "Omar"
+          }
+        }
+      ]
+    },
+    {
+      "parent": null,
+      "name": "Salary",
+      "description": "",
+      "children": [],
+      "items": []
+    },
+    {
+      "parent": null,
+      "name": "العاب",
+      "description": "العاب عدى بيه",
+      "children": [],
+      "items": []
+    }
+  ],
+  "users": [
+    {
+      "name": "Omar"
+    },
+    {
+      "name": "Nesma"
+    },
+    {
+      "name": "عدى"
+    }
+  ],
+  "currentUser": null
+}
