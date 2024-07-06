@@ -21,7 +21,7 @@ namespace Expenses
         public List<Category> categories { get; set; } = new List<Category>();
         public List<Person> users { get; set; } = new List<Person>();
 
-        public Person currentUser { get; set; }
+        public Person currentUser { get; private set; }
         private DB() { }
 
         [JsonConstructor]
@@ -31,7 +31,10 @@ namespace Expenses
             this.users = users;
             this.currentUser = currentUser;
         }
-
+        public void setCurrentUser(Person user)
+        {
+            this.currentUser = user;
+        }
         public async void Reload()
         {
             if (File.Exists(DbFileName))

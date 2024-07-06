@@ -5,15 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Expenses"
         mc:Ignorable="d"
-        Title="AddCategory" MaxWidth="300" MaxHeight="300" d:DesignWidth="300" d:DesignHeight="150">
+        Title="AddCategory" MaxWidth="300" MaxHeight="300" d:DesignWidth="300" d:DesignHeight="208.456">
     <Grid>
         <Grid>
-            <Label Content="* Category Name" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-            <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="14,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
-            <Label Content="Description" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top"/>
-            <TextBox x:Name="textBox2" HorizontalAlignment="Left" Margin="14,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
+            <Label Content="* Category Name" HorizontalAlignment="Left" Margin="6,68,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="10,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
+            <Label Content="Description" HorizontalAlignment="Left" Margin="6,111,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="textBox2" HorizontalAlignment="Left" Margin="10,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
             <Button Content="Add" Margin="0,34,10,0" HorizontalAlignment="Right" Width="39" Height="20" VerticalAlignment="Top" Click="Button_Click"/>
             <Button Content="Cancel" Margin="0,78,10,0" HorizontalAlignment="Right" Width="39" Height="20" VerticalAlignment="Top" IsCancel="True" Click="Button_Click_1"/>
+            <Label Content="Parent Category" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+            <ComboBox x:Name="combobox1" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="120"/>
 
         </Grid>
 

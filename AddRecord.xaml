@@ -18,8 +18,9 @@
         <CheckBox x:Name="checkbox1" Content="Today?" Margin="0,38,17,0" VerticalAlignment="Top" Checked="checkbox1_Checked" Unchecked="checkbox1_Unchecked" HorizontalAlignment="Right" Width="56"/>
         <DatePicker x:Name="datePicker" Margin="388,68,10,0" VerticalAlignment="Top"/>
         <CheckBox x:Name="income" Content="Income" Margin="0,15,13,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="59"/>
-        <Button x:Name="addListBut" Content="Add List" HorizontalAlignment="Left" Margin="153,0,0,23" Click="AddList" Height="20" VerticalAlignment="Bottom"/>
+        <Button x:Name="addListBut" Content="Add List" HorizontalAlignment="Left" Margin="326,0,0,25" Click="AddList" Height="20" VerticalAlignment="Bottom"/>
         <DataGrid x:Name="dataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="143,23,127,50" IsEnabled="False" />
+        <Button Content="Add Category" HorizontalAlignment="Left" Margin="10,169,0,0" Height="20" VerticalAlignment="Top" Click="Button_Click_1"/>
 
     </Grid>
 </Window>

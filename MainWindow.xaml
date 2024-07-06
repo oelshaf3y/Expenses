@@ -7,19 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="800" ResizeMode="NoResize">
     <Grid>
-        <Button Content="Add Category" Margin="0,47,30,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="83" Click="AddCategory"/>
-        <Button Content="Add Sub Category" Margin="0,84,32,0" VerticalAlignment="Top" Click="AddSubCategory" HorizontalAlignment="Right" Width="110"/>
-        <Button Content="Add Record" Margin="0,88,345,0" VerticalAlignment="Top" Click="AddRecord" HorizontalAlignment="Right" Width="75"/>
-        <Button Content="Add User" Margin="0,169,30,0" VerticalAlignment="Top" Click="AddUser" HorizontalAlignment="Right" Width="112"/>
+        <Button Content="Add User" Margin="0,42,542,0" VerticalAlignment="Top" Click="AddUser" HorizontalAlignment="Right" Width="60"/>
         <Label Content="User" HorizontalAlignment="Left" Margin="43,11,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="combobox1" HorizontalAlignment="Left" Margin="43,41,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="SetCurrentUser"/>
-        <DataGrid x:Name="datagrid" Margin="43,115,253,31" ScrollViewer.CanContentScroll="True" AlternatingRowBackground="#FFEBEBEB"/>
-        <Label x:Name="currentLabel" Content="Label" HorizontalAlignment="Left" Margin="276,21,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="incomeLabel" Content="Label" HorizontalAlignment="Left" Margin="276,49,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="paidLable" Content="Label" HorizontalAlignment="Left" Margin="276,75,0,0" VerticalAlignment="Top"/>
-        <Button Content="Edit Record" Margin="0,88,260,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="64" Click="EditRecord"/>
-        <ComboBox x:Name="monthPicker" HorizontalAlignment="Left" Margin="109,77,0,0" VerticalAlignment="Top" Width="54" SelectionChanged="monthPicker_SelectionChanged"/>
-        <ComboBox x:Name="yearPicker" HorizontalAlignment="Left" Margin="43,76,0,0" VerticalAlignment="Top" Width="50" SelectionChanged="yearPicker_SelectionChanged"/>
         <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="1144,361,0,0" VerticalAlignment="Top"/>
 
     </Grid>

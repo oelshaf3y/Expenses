@@ -16,10 +16,10 @@
     <Compile Update="AddRecord.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="AddSubCat.xaml.cs">
+    <Compile Update="AddUser.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="AddUser.xaml.cs">
+    <Compile Update="UserUI.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -33,13 +33,13 @@
     <Page Update="AddRecord.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="AddSubCat.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Update="AddUser.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserUI.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

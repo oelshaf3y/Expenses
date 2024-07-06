@@ -23,17 +23,20 @@ namespace Expenses
     {
         public ShoppingList list { get; set; }
         private bool isEditable = false;
-        Record record;
-        public AddRecord()
+        public Record record;
+        public Person user;
+        public AddRecord(Person user)
         {
             InitializeComponent();
             checkbox1.IsChecked = true;
             combobox1.ItemsSource = DB.flatten(DB.Instance.categories).Select(x => x.getFullName());
+            this.user = user;
         }
 
         public AddRecord(Record record)
         {
             this.record = record;
+            this.user = record.User;
             isEditable = true;
             InitializeComponent();
             List<string> cats = DB.flatten(DB.Instance.categories).Select(x => x.getFullName()).ToList();
@@ -42,6 +45,7 @@ namespace Expenses
             textBox1.Text = record.Info;
             textbox2.Text = record.Value.ToString();
             checkbox1.IsChecked = false;
+            if(record.Transaction==cashFlow.Income) income.IsChecked = true;
             checkbox1.Visibility = Visibility.Hidden;
             datePicker.SelectedDate = record.Date;
             if (record.Transaction == cashFlow.Income) income.IsChecked = true;
@@ -84,17 +88,19 @@ namespace Expenses
                     record.Date = date;
                     record.Transaction = transaction;
                     record.GroceryList = list;
+                    if (income.IsChecked == true) record.Transaction = cashFlow.Income;
+
                 }
                 else
                 {
 
                     if (income.IsChecked == true) transaction = cashFlow.Income;
                     category.AddItem(
-                        new Record(textBox1.Text, result, category.getFullName(), date.Date, transaction, DB.Instance.currentUser,
+                        new Record(textBox1.Text, result, category.getFullName(), date.Date, transaction, user,
                         list)
                         );
                 }
-                //DB.Instance.currentUser.adjustBalance(index,result);
+                //user.adjustBalance(index,result);
                 DB.Instance.sync();
                 this.Close();
             }
@@ -155,6 +161,13 @@ namespace Expenses
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            AddCategory addCatWindow = new AddCategory(this);
+            addCatWindow.ShowDialog();
+            //this.Close();
         }
     }
 }
