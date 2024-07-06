@@ -44,8 +44,18 @@ namespace Expenses
 
         private async void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            combobox1.ItemsSource = DB.Instance.users.Select(x => x.name);
-            this.UpdateLayout();
+            //combobox1.ItemsSource = DB.Instance.users.Select(x => x.name);
+            //this.UpdateLayout();
+            foreach (Person user in DB.Instance.users)
+            {
+                UserHolder holder = new UserHolder(this);
+                holder.userchip.Content = user.name;
+                holder.userchip.Icon = user.initials;
+                holder.userchip.Width=this.Width/3;
+                holder.userchip.Height=this.Height/3;
+                Content.Children.Add(holder);
+
+            }
         }
 
 
@@ -56,14 +66,5 @@ namespace Expenses
             this.Close();
         }
 
-        private void SetCurrentUser(object sender = null, RoutedEventArgs e = null)
-        {
-            Person user = DB.Instance.users[combobox1.SelectedIndex];
-            DB.Instance.setCurrentUser(user);
-            UserUI ui = new UserUI(user);
-            this.Close();
-            ui.ShowDialog();
-        }
-        
     }
 }

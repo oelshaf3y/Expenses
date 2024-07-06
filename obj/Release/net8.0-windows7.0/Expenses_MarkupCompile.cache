@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Omar.Elshafey\source\repos\oelshaf3y\Expenses\obj\Release\net8.0-windows7.0\
+C:\Users\Omar.Elshafey\Source\Repos\oelshaf3y\Expenses\obj\Release\net8.0-windows7.0\
 Expenses
 none
 false
 TRACE;RELEASE;NET;NET8_0;NETCOREAPP
-C:\Users\Omar.Elshafey\source\repos\oelshaf3y\Expenses\App.xaml
-6-764620640
+C:\Users\Omar.Elshafey\Source\Repos\oelshaf3y\Expenses\App.xaml
+771742466
 
-152039899816
-198-1509178875
-AddCategory.xaml;AddGroceryList.xaml;AddRecord.xaml;AddSubCat.xaml;AddUser.xaml;MainWindow.xaml;
+16-683890517
+203-1588322710
+AddCategory.xaml;AddGroceryList.xaml;AddRecord.xaml;AddUser.xaml;MainWindow.xaml;UserHolder.xaml;UserUI.xaml;
 
 True
 

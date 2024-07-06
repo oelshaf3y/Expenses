@@ -6,23 +6,13 @@
       "children": [],
       "items": [
         {
-          "Info": "قبض شهر 6",
-          "Value": 24480,
-          "Category": "Salary",
-          "Date": "2024-07-01T00:00:00",
-          "Transaction": 1,
-          "User": {
-            "name": "Omar"
-          },
-          "GroceryList": null
-        },
-        {
           "Info": "قبض",
           "Value": 5000,
           "Category": "Salary",
           "Date": "2022-07-01T00:00:00",
           "Transaction": 1,
           "User": {
+            "initials": "O",
             "name": "Omar"
           },
           "GroceryList": null
@@ -34,6 +24,7 @@
           "Date": "2024-06-01T00:00:00",
           "Transaction": 1,
           "User": {
+            "initials": "O",
             "name": "Omar"
           },
           "GroceryList": null
@@ -45,7 +36,20 @@
           "Date": "2023-03-01T00:00:00",
           "Transaction": 1,
           "User": {
+            "initials": "ن",
             "name": "نسمة"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "jul",
+          "Value": 24480,
+          "Category": "Salary",
+          "Date": "2024-07-06T00:00:00+03:00",
+          "Transaction": 1,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
           },
           "GroceryList": null
         }
@@ -64,6 +68,7 @@
           "Date": "2024-07-04T00:00:00+03:00",
           "Transaction": 0,
           "User": {
+            "initials": "O",
             "name": "Omar"
           },
           "GroceryList": null
@@ -87,6 +92,27 @@
               "Date": "2024-07-03T00:00:00",
               "Transaction": 0,
               "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            }
+          ],
+          "parent": "Debts"
+        },
+        {
+          "name": "sss",
+          "description": "",
+          "children": [],
+          "items": [
+            {
+              "Info": "sssa",
+              "Value": 200,
+              "Category": "Debts.sss",
+              "Date": "2024-07-06T00:00:00+03:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
                 "name": "Omar"
               },
               "GroceryList": null
@@ -110,6 +136,7 @@
           "Date": "2024-07-04T00:00:00+03:00",
           "Transaction": 0,
           "User": {
+            "initials": "O",
             "name": "Omar"
           },
           "GroceryList": {
@@ -136,6 +163,7 @@
           "Date": "2024-06-12T00:00:00",
           "Transaction": 0,
           "User": {
+            "initials": "O",
             "name": "Omar"
           },
           "GroceryList": {
@@ -175,7 +203,20 @@
               "name": "takeaway",
               "description": "",
               "children": [],
-              "items": [],
+              "items": [
+                {
+                  "Info": "tikka",
+                  "Value": 200,
+                  "Category": "مطاعم.الساخن.takeaway",
+                  "Date": "2024-07-06T00:00:00+03:00",
+                  "Transaction": 0,
+                  "User": {
+                    "initials": "O",
+                    "name": "Omar"
+                  },
+                  "GroceryList": null
+                }
+              ],
               "parent": "الساخن"
             }
           ],
@@ -203,10 +244,16 @@
   ],
   "users": [
     {
+      "initials": "O",
       "name": "Omar"
     },
     {
+      "initials": "ن",
       "name": "نسمة"
+    },
+    {
+      "initials": "OO",
+      "name": "Omar Osama"
     }
   ],
   "currentUser": null

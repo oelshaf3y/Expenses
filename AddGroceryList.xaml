@@ -4,14 +4,25 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Expenses"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+Style="{StaticResource MaterialDesignWindow}"
         mc:Ignorable="d"
         Title="AddGroceryList" Height="200" Width="300" MinWidth="300" MinHeight="200">
     <Grid>
         <DataGrid x:Name="dataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,68,10" AlternatingRowBackground="#FFE9E9E9" CanUserAddRows="True"/>
-        <Button Content="Save" Margin="0,0,17,66" HorizontalAlignment="Right" Width="30" Click="Save" Height="20" VerticalAlignment="Bottom"/>
-        <Button Content="Cancel" Margin="0,0,13,32" IsCancel="True" Click="Cancel" HorizontalAlignment="Right" Width="38" Height="20" VerticalAlignment="Bottom"/>
-        <Button Content="+" Margin="0,25,24,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="16" Click="AddRow"/>
-        <Button Content="-" Margin="0,50,24,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="16" Click="RemoveRow"/>
+
+        <Button Margin="0,0,12,55" Click="Save" materialDesign:ElevationAssist.Elevation="Dp0" Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Height="40" VerticalAlignment="Bottom" HorizontalAlignment="Right">
+            <materialDesign:PackIcon Kind="ContentSave"/>
+        </Button>
+        <Button  Margin="0,0,12,10" Click="Cancel" materialDesign:ElevationAssist.Elevation="Dp0" Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Height="40" VerticalAlignment="Bottom" HorizontalAlignment="Right">
+            <materialDesign:PackIcon Kind="Cancel"/>
+        </Button>
+        <Button Margin="0,0,22,131" Click="AddRow" materialDesign:ElevationAssist.Elevation="Dp0" Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="20" Background="#FF3A5DB7" BorderBrush="#FF3A5DB7">
+            <materialDesign:PackIcon Kind="Plus"/>
+        </Button>
+        <Button Margin="0,0,22,106" Click="RemoveRow" materialDesign:ElevationAssist.Elevation="Dp0" Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="20" Background="#FFB73A3A" BorderBrush="#FFB73A3A">
+            <materialDesign:PackIcon Kind="Minus"/>
+        </Button>
 
     </Grid>
 </Window>

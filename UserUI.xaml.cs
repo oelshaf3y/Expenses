@@ -38,7 +38,12 @@ namespace Expenses
             this.user = user;
             DB.Instance.setCurrentUser(user);
             SetCurrentUser(this.user);
-            UserName.Content = DB.Instance.currentUser.name;
+            UserName.Content = this.user;
+            UserName.Icon = this.user.initials;
+        }
+        private void EndTask(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
 
         private void AddRecord(object sender, RoutedEventArgs e)

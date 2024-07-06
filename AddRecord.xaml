@@ -4,23 +4,30 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Expenses"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Style="{StaticResource MaterialDesignWindow}"
         mc:Ignorable="d"
-        Title="AddRecord" Height="225" Width="500" MinWidth="500" MinHeight="225">
+        Title="AddRecord" Height="428" Width="788" MinWidth="500" MinHeight="225">
     <Grid>
-        <Label Content="Info:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="10,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Amount" HorizontalAlignment="Left" Margin="10,59,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textbox2" HorizontalAlignment="Left" Margin="10,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Category" HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="combobox1" HorizontalAlignment="Left" Margin="10,139,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Save" Margin="0,108,28,0" VerticalAlignment="Top" Click="SaveRecord" HorizontalAlignment="Right" Width="29"/>
-        <Button Content="Cancel" Margin="0,139,18,0" VerticalAlignment="Top" IsCancel="True" HorizontalAlignment="Right" Width="39" Click="Button_Click"/>
-        <CheckBox x:Name="checkbox1" Content="Today?" Margin="0,38,17,0" VerticalAlignment="Top" Checked="checkbox1_Checked" Unchecked="checkbox1_Unchecked" HorizontalAlignment="Right" Width="56"/>
-        <DatePicker x:Name="datePicker" Margin="388,68,10,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="income" Content="Income" Margin="0,15,13,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="59"/>
-        <Button x:Name="addListBut" Content="Add List" HorizontalAlignment="Left" Margin="326,0,0,25" Click="AddList" Height="20" VerticalAlignment="Bottom"/>
-        <DataGrid x:Name="dataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="143,23,127,50" IsEnabled="False" />
-        <Button Content="Add Category" HorizontalAlignment="Left" Margin="10,169,0,0" Height="20" VerticalAlignment="Top" Click="Button_Click_1"/>
+        <TextBox x:Name="textBox1"  VerticalAlignment="Top"  materialDesign:HintAssist.Hint="Info"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="10,10,0,0" HorizontalAlignment="Left" Width="120"  />
+        <TextBox x:Name="textbox2"  VerticalAlignment="Top"  materialDesign:HintAssist.Hint="Amount"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="10,64,0,0" HorizontalAlignment="Left" Width="120"  />
+        <Button Margin="0,146,32,0" Click="SaveRecord" materialDesign:ElevationAssist.Elevation="Dp0" Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Height="40" VerticalAlignment="Top" HorizontalAlignment="Right">
+            <materialDesign:PackIcon Kind="ContentSave"/>
+        </Button>
+        <Button IsCancel="True" Margin="0,201,32,0" Click="Button_Click" materialDesign:ElevationAssist.Elevation="Dp0" Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Height="40" VerticalAlignment="Top" HorizontalAlignment="Right">
+            <materialDesign:PackIcon Kind="CancelBold"/>
+        </Button>
+        <CheckBox x:Name="income" Content="Income" IsChecked="False" Style="{StaticResource MaterialDesignFilterChipPrimaryCheckBox}" Margin="0,23,10,0" Height="32" VerticalAlignment="Top" HorizontalAlignment="Right"  />
+        <DatePicker x:Name="DPicker" Margin="0,95,10,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="86"/>
+        <Button x:Name="addListBut" Margin="227,0,0,19" Click="AddList" materialDesign:ElevationAssist.Elevation="Dp0" Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Height="40" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="40">
+            <materialDesign:PackIcon Name="addListButIco" Kind="Cart"/>
+        </Button>
+        <DataGrid x:Name="dataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="214,23,127,64" IsEnabled="False" />
+        <Button Margin="10,0,0,19" Click="Button_Click_1" materialDesign:ElevationAssist.Elevation="Dp0" Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Height="40" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="40">
+            <materialDesign:PackIcon Kind="PlusBold"/>
+        </Button>
+        <TreeView x:Name="CatTree" MinWidth="150" Margin="0,133,0,64" HorizontalAlignment="Left" Width="209" Background="#FFF0EDED"/>
+        <Label Content="Category" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

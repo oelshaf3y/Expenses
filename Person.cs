@@ -9,12 +9,14 @@ namespace Expenses
 {
     public class Person
     {
+        public string initials { get; set; }
         public string name { get; set; }
         //private Balance Balance { get; set; }
         [JsonConstructor]
         public Person(string name)
         {
             this.name = name;
+            this.initials =string.Join("",name.Split(' ').Select(x=>x.First()));
         }
         //public void adjustBalance(int index,double value)
         //{

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MaterialDesignThemes.Wpf;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -21,6 +22,7 @@ namespace Expenses
     /// </summary>
     public partial class AddRecord : Window
     {
+
         public ShoppingList list { get; set; }
         private bool isEditable = false;
         public Record record;
@@ -28,26 +30,25 @@ namespace Expenses
         public AddRecord(Person user)
         {
             InitializeComponent();
-            checkbox1.IsChecked = true;
-            combobox1.ItemsSource = DB.flatten(DB.Instance.categories).Select(x => x.getFullName());
+            GetCatTree(null, DB.Instance.categories);
             this.user = user;
         }
 
         public AddRecord(Record record)
         {
+            InitializeComponent();
             this.record = record;
             this.user = record.User;
             isEditable = true;
-            InitializeComponent();
-            List<string> cats = DB.flatten(DB.Instance.categories).Select(x => x.getFullName()).ToList();
-            combobox1.ItemsSource = cats;
-            combobox1.SelectedIndex = cats.IndexOf(record.Category);
+            GetCatTree(null, DB.Instance.categories);
+            TreeViewItem item = FindItem(record.Category.Split('.').Last(), CatTree);
+            if (item != null) item.IsSelected = true;
+            //combobox1.ItemsSource = cats;
+            //combobox1.SelectedIndex = cats.IndexOf(record.Category);
             textBox1.Text = record.Info;
             textbox2.Text = record.Value.ToString();
-            checkbox1.IsChecked = false;
-            if(record.Transaction==cashFlow.Income) income.IsChecked = true;
-            checkbox1.Visibility = Visibility.Hidden;
-            datePicker.SelectedDate = record.Date;
+            if (record.Transaction == cashFlow.Income) income.IsChecked = true;
+            DPicker.SelectedDate = record.Date;
             if (record.Transaction == cashFlow.Income) income.IsChecked = true;
             if (record.GroceryList != null)
             {
@@ -55,31 +56,32 @@ namespace Expenses
                 dataGrid.ItemsSource = list.items;
                 textbox2.Text = list.Value.ToString();
                 textbox2.IsEnabled = false;
-                addListBut.Content = "Edit List";
+                addListButIco.Kind = PackIconKind.Edit;
             }
         }
 
+
         private void SaveRecord(object sender, RoutedEventArgs e)
         {
-            if (combobox1.SelectedIndex == -1) { MessageBox.Show("Please select a category!"); return; }
-            if (textBox1.Text.Length == 0 || textBox1.Text == null)
+            if (CatTree.SelectedItem == null)
             {
                 MessageBox.Show("Please Enter the Info!");
                 return;
             }
             DateTime date;
             cashFlow transaction = cashFlow.Expense;
-            if (checkbox1.IsChecked == true)
+            if (DPicker.SelectedDate == null)
             {
                 date = DateTime.Now;
             }
             else
             {
-                date = (DateTime)datePicker.SelectedDate;
+                date = (DateTime)DPicker.SelectedDate;
             }
             if (double.TryParse(textbox2.Text, out double result))
             {
-                Category category = DB.flatten(DB.Instance.categories)[combobox1.SelectedIndex];
+                TreeViewItem tvi = CatTree.SelectedItem as TreeViewItem;
+                Category category = DB.flatten(DB.Instance.categories).Where(x => x.name == tvi.Header.ToString()).FirstOrDefault();
                 if (isEditable)
                 {
                     record.Info = textBox1.Text;
@@ -100,7 +102,6 @@ namespace Expenses
                         list)
                         );
                 }
-                //user.adjustBalance(index,result);
                 DB.Instance.sync();
                 this.Close();
             }
@@ -113,13 +114,13 @@ namespace Expenses
 
         private void checkbox1_Checked(object sender, RoutedEventArgs e)
         {
-            datePicker.Visibility = Visibility.Hidden;
+            if (DPicker != null)
+                DPicker.SelectedDate = DateTime.Now.Date;
         }
 
         private void checkbox1_Unchecked(object sender, RoutedEventArgs e)
         {
-            datePicker.Visibility = Visibility.Visible;
-
+            DPicker.SelectedDate = null;
         }
 
         private void AddList(object sender, RoutedEventArgs e)
@@ -146,15 +147,15 @@ namespace Expenses
                 textbox2.Text = list.Value.ToString();
                 textbox2.IsEnabled = false;
                 dataGrid.ItemsSource = list.items;
-                addListBut.Content = "Edit List";
+                addListButIco.Kind = PackIconKind.Edit;
             }
             else
             {
                 textbox2.Text = "";
-                textbox2.IsEnabled = true ;
+                textbox2.IsEnabled = true;
                 dataGrid.ItemsSource = list.items;
                 list = null;
-                addListBut.Content = "Add List";
+                addListButIco.Kind= PackIconKind.Cart;
             }
         }
 
@@ -168,6 +169,75 @@ namespace Expenses
             AddCategory addCatWindow = new AddCategory(this);
             addCatWindow.ShowDialog();
             //this.Close();
+        }
+        private TreeViewItem FindItem(string category, object Parent)
+        {
+            if (Parent is TreeView)
+            {
+                TreeView tv = (TreeView)Parent;
+                foreach (TreeViewItem item in tv.Items)
+                {
+                    if (item.Header.ToString() == category)
+                    {
+                        return item;
+                    }
+                    else if (item.Items.Count > 0)
+                    {
+                        var a = FindItem(category, item);
+                        if (a != null)
+                        {
+                            item.IsExpanded = true;
+                            return a;
+                        }
+                    }
+                }
+            }
+            else
+            {
+                TreeViewItem parent = Parent as TreeViewItem;
+                foreach (TreeViewItem item in parent.Items)
+                {
+                    if (item.Header.ToString() == category)
+                    {
+                        return item;
+                    }
+                    else if (item.Items.Count > 0)
+                    {
+                        var a = FindItem(category, item);
+                        if (a != null) { item.IsExpanded = true; return a; }
+                    }
+                }
+            }
+            return null;
+        }
+        private void GetCatTree(TreeViewItem parent, List<Category> categories)
+        {
+            if (parent == null)
+            {
+                foreach (Category cat in categories)
+                {
+                    TreeViewItem item = new TreeViewItem();
+                    item.Header = cat.name;
+                    CatTree.Items.Add(item);
+                    if (cat.children.Count > 0)
+                    {
+                        GetCatTree(item, cat.children);
+                    }
+                }
+            }
+            else
+            {
+                foreach (Category cat in categories)
+                {
+                    TreeViewItem item = new TreeViewItem();
+                    item.Header = cat.name;
+                    parent.Items.Add(item);
+                    if (cat.children.Count > 0)
+                    {
+                        GetCatTree(item, cat.children);
+                    }
+                }
+            }
         }
     }
 }

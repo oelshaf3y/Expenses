@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "vA52MIbIefM=",
+  "dgSpecHash": "fRuqruGu02Q=",
   "success": true,
-  "projectFilePath": "C:\\Users\\oelsh\\source\\repos\\oelshaf3y\\Expenses\\Expenses.csproj",
+  "projectFilePath": "C:\\Users\\Omar.Elshafey\\Source\\Repos\\oelshaf3y\\Expenses\\Expenses.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\oelsh\\.nuget\\packages\\livecharts\\0.9.7\\livecharts.0.9.7.nupkg.sha512",
-    "C:\\Users\\oelsh\\.nuget\\packages\\livecharts.wpf\\0.9.7\\livecharts.wpf.0.9.7.nupkg.sha512",
-    "C:\\Users\\oelsh\\.nuget\\packages\\materialdesigncolors\\3.1.0\\materialdesigncolors.3.1.0.nupkg.sha512",
-    "C:\\Users\\oelsh\\.nuget\\packages\\materialdesignthemes\\5.1.0\\materialdesignthemes.5.1.0.nupkg.sha512",
-    "C:\\Users\\oelsh\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
+    "C:\\Users\\Omar.Elshafey\\.nuget\\packages\\livecharts\\0.9.7\\livecharts.0.9.7.nupkg.sha512",
+    "C:\\Users\\Omar.Elshafey\\.nuget\\packages\\livecharts.wpf\\0.9.7\\livecharts.wpf.0.9.7.nupkg.sha512",
+    "C:\\Users\\Omar.Elshafey\\.nuget\\packages\\materialdesigncolors\\3.1.0\\materialdesigncolors.3.1.0.nupkg.sha512",
+    "C:\\Users\\Omar.Elshafey\\.nuget\\packages\\materialdesignthemes\\5.1.0\\materialdesignthemes.5.1.0.nupkg.sha512",
+    "C:\\Users\\Omar.Elshafey\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
   ],
   "logs": [
     {
