@@ -224,11 +224,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Omar.Elshafey\\Source\\Repos\\oelshaf3y\\Expenses\\Expenses.csproj",
+      "projectUniqueName": "C:\\Users\\Omar.Elshafey\\source\\repos\\oelshaf3y\\Expenses\\Expenses.csproj",
       "projectName": "Expenses",
-      "projectPath": "C:\\Users\\Omar.Elshafey\\Source\\Repos\\oelshaf3y\\Expenses\\Expenses.csproj",
+      "projectPath": "C:\\Users\\Omar.Elshafey\\source\\repos\\oelshaf3y\\Expenses\\Expenses.csproj",
       "packagesPath": "C:\\Users\\Omar.Elshafey\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Omar.Elshafey\\Source\\Repos\\oelshaf3y\\Expenses\\obj\\",
+      "outputPath": "C:\\Users\\Omar.Elshafey\\source\\repos\\oelshaf3y\\Expenses\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Omar.Elshafey\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Expenses
-build_property.ProjectDir = C:\Users\Omar.Elshafey\Source\Repos\oelshaf3y\Expenses\
+build_property.ProjectDir = C:\Users\Omar.Elshafey\source\repos\oelshaf3y\Expenses\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -72,7 +72,7 @@ namespace Expenses {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Expenses;component/userholder.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Expenses;V1.0.0.0;component/userholder.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\UserHolder.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

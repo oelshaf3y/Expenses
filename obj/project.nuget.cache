@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fRuqruGu02Q=",
+  "dgSpecHash": "fcsEDcWAfQE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Omar.Elshafey\\Source\\Repos\\oelshaf3y\\Expenses\\Expenses.csproj",
+  "projectFilePath": "C:\\Users\\Omar.Elshafey\\source\\repos\\oelshaf3y\\Expenses\\Expenses.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Omar.Elshafey\\.nuget\\packages\\livecharts\\0.9.7\\livecharts.0.9.7.nupkg.sha512",
     "C:\\Users\\Omar.Elshafey\\.nuget\\packages\\livecharts.wpf\\0.9.7\\livecharts.wpf.0.9.7.nupkg.sha512",
