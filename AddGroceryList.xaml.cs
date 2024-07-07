@@ -46,7 +46,7 @@ namespace Expenses
 
         private void AddRow(object sender, RoutedEventArgs e)
         {
-            items.Add(new ShopingItem("Fill me.."));
+            items.Add(new ShopingItem("   "));
         }
 
         private void Save(object sender, RoutedEventArgs e)
@@ -55,7 +55,13 @@ namespace Expenses
             parent.Value = items.Select(x => x.Value * x.Count).Sum();
             this.Close();
         }
-
+        private void AddRow_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.OemPlus || e.Key == Key.Add)
+            {
+                AddRow(null, null);
+            }
+        }
         private void RemoveRow(object sender, RoutedEventArgs e)
         {
             if (dataGrid.SelectedItem == null) return;

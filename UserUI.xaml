@@ -5,16 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
 Style="{StaticResource MaterialDesignWindow}"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
         xmlns:local="clr-namespace:Expenses"
         mc:Ignorable="d"
-        Title="UserUI" Height="725" Width="800" ResizeMode="NoResize">
+        Title="UserUI" Height="739" Width="1177" WindowStartupLocation="CenterScreen" Loaded="OnLoaded">
     <Grid>
-
-        <StackPanel x:Name="msp" Height="122" VerticalAlignment="Top">
-            
+        <StackPanel x:Name="msp" Height="110" VerticalAlignment="Top">
         </StackPanel>
+        <StackPanel Orientation="Vertical" Margin="0,122,0,0" HorizontalAlignment="Right" Width="306">
+            <lvc:PieChart Name="SumPie"  Height="200" InnerRadius="50"/>
+            <lvc:PieChart Name="Pie" MinHeight="400" Margin="0,50,0,0" LegendLocation="Bottom"/>
+        </StackPanel>
+        <lvc:CartesianChart Name="Line" LegendLocation="Right" Margin="0,122,561,0" Height="157" VerticalAlignment="Top"/>
         <Grid Margin="0,0,0,-5">
-            <DataGrid x:Name="datagrid" IsReadOnly="True" AutoGenerateColumns="False" Margin="43,269,107,135"  ScrollViewer.CanContentScroll="True" AlternatingRowBackground="#FFEBEBEB">
+            <DataGrid x:Name="datagrid" IsReadOnly="True" AutoGenerateColumns="False" Margin="43,288,342,151"  ScrollViewer.CanContentScroll="True" AlternatingRowBackground="#FFEBEBEB">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Info" Binding="{Binding Info}"/>
                     <DataGridTextColumn Header="Value" Binding="{Binding Value}"/>
@@ -24,19 +28,19 @@ Style="{StaticResource MaterialDesignWindow}"
                     <DataGridTextColumn Width="*" Header="Shoping List" Binding="{Binding GroceryList}"/>
                 </DataGrid.Columns>
             </DataGrid>
-            <Button Margin="0,220,217,0" VerticalAlignment="Top" Click="AddRecord" HorizontalAlignment="Right" >
+            <Button Margin="0,220,453,0" VerticalAlignment="Top" IsDefault="True" Click="AddRecord" HorizontalAlignment="Right" Width="48" >
                 <materialDesign:PackIcon Kind="CartPlus"/>
             </Button>
-            <Label x:Name="currentLabel" Content="Label" HorizontalAlignment="Center" Margin="0,177,0,0" VerticalAlignment="Top"/>
-            <Label x:Name="incomeLabel" Content="Label" HorizontalAlignment="Left" Margin="503,176,0,0" VerticalAlignment="Top"/>
-            <Label x:Name="paidLable" Content="Label" HorizontalAlignment="Left" Margin="614,175,0,0" VerticalAlignment="Top"/>
-            <Button Margin="0,220,121,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="46" Click="EditRecord">
+            <Button Margin="0,220,356,0" VerticalAlignment="Top" Click="EditRecord" HorizontalAlignment="Right" Width="46">
                 <materialDesign:PackIcon Kind="Edit"/>
             </Button>
-            <Button HorizontalAlignment="Left" Margin="583,220,0,0" VerticalAlignment="Top" Width="49" Click="DeleteRecord">
+            <Button Margin="0,220,403,0" VerticalAlignment="Top" Click="DeleteRecord" HorizontalAlignment="Right" Width="49">
                 <materialDesign:PackIcon Kind="CartRemove"/>
             </Button>
-            <WrapPanel Name="footer" Margin="10,600,10,10"> </WrapPanel>
+            <WrapPanel Name="footer" Margin="10,0,342,10" Height="136" VerticalAlignment="Bottom"></WrapPanel>
+            <Button Margin="0,183,356,0" VerticalAlignment="Top"  IsDefault="True" Click="ExportRecords" HorizontalAlignment="Right" Width="145" >
+                <materialDesign:PackIcon Kind="ExportVariant" materialDesign:ElevationAssist.Elevation="Dp0"/>
+            </Button>
 
         </Grid>
 

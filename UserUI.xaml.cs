@@ -13,12 +13,17 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using LiveCharts;
+using LiveCharts.Wpf;
 using static MaterialDesignThemes.Wpf.Theme;
 using static System.Net.Mime.MediaTypeNames;
 using Button = System.Windows.Controls.Button;
 using CheckBox = System.Windows.Controls.CheckBox;
 using RadioButton = System.Windows.Controls.RadioButton;
 using TabControl = System.Windows.Controls.TabControl;
+using System.Windows.Ink;
+using System.IO;
+using System.Text.Json;
 
 namespace Expenses
 {
@@ -44,20 +49,13 @@ namespace Expenses
             InitializeComponent();
             datagrid.ItemsSource = new List<Record>();
             this.user = user;
+        }
+
+        private void OnLoaded(object sender, RoutedEventArgs e)
+        {
             DB.Instance.setCurrentUser(user);
             SetCurrentUser(this.user);
-            //UserName.Content = this.user;
-            //UserName.Icon = this.user.initials;
         }
-
-
-        private void AddRecord(object sender, RoutedEventArgs e)
-        {
-            AddRecord addRecordWindow = new AddRecord(user);
-            addRecordWindow.ShowDialog();
-            Refresh();
-        }
-
         private void Refresh()
         {
             TabItem t = tabControl.SelectedItem as TabItem;
@@ -83,7 +81,6 @@ namespace Expenses
                 }
             }
         }
-
         private void SetCurrentUser(Person user)
         {
             DB.Instance.setCurrentUser(user);
@@ -94,25 +91,16 @@ namespace Expenses
             {
                 year = -1;
                 datagrid.ItemsSource = null;
-                currentLabel.Content = "current: 0.00";
-                paidLable.Content = "Paid: 0.00";
-                incomeLabel.Content = "Income: 0.00";
                 years = new List<int>();
                 months = new List<int>();
             }
             else
             {
                 years.Sort((x, y) => y.CompareTo(x));
-                //yearPicker.ItemsSource = years;
-
-                //if (years.Contains(DateTime.Now.Date.Year)) year = DateTime.Now.Date.Year;
-                //else year = years.First();
-                //yearPicker.SelectedIndex = years.IndexOf(year);
             }
             GetTabs();
 
         }
-
         private void GetTabs()
         {
             if (msp.Children.Count > 0)
@@ -121,7 +109,7 @@ namespace Expenses
                 UpdateLayout();
             }
             Header tc = new Header();
-            tabControl=tc.tabControl;
+            tabControl = tc.tabControl;
             Button back = new Button();
             back.Click += this.back;
             PackIcon butIco = new PackIcon();
@@ -141,10 +129,8 @@ namespace Expenses
                 months.Sort((x, y) => y.CompareTo(x));
                 TabItem tab = new TabItem();
                 tab.Header = y.ToString();
-                tabControl.SelectionChanged += (object sender, SelectionChangedEventArgs e) =>
-                {
-                    ChangeYear(sender, e);
-                };
+                tabControl.SelectionChanged += ChangeYear;
+
                 WrapPanel wp = new WrapPanel();
                 string GroupName = y.ToString();
                 foreach (int m in months)
@@ -174,22 +160,102 @@ namespace Expenses
             activeTab.IsSelected = true;
             msp.Children.Add(tc);
         }
+        private void DrawCharts()
+        {
 
+            Pie.Series.Clear();
+            SumPie.Series.Clear();
+            Line.Series.Clear();
+            PieSeries expSer= new PieSeries();
+            expSer.Title = "Expenses";
+            double expenses = records.Where(x => x.Transaction == cashFlow.Expense).Select(x => x.Value).Sum();
+            expSer.Values = new ChartValues<double> { expenses };
+            expSer.DataLabels = true;
+            SumPie.Series.Add(expSer);
+            PieSeries incSer = new PieSeries();
+            incSer.Title = "Income";
+            incSer.DataLabels = true;
+            double netIncome = records.Where(x => x.Transaction == cashFlow.Income).Select(x => x.Value).Sum();
+            incSer.Values = new ChartValues<double> { netIncome };
+            SumPie.Series.Add(incSer);
+            PieSeries netSer = new PieSeries();
+            netSer.Title = "Remainder";
+            netSer.Values = new ChartValues<double> { netIncome-expenses};
+            netSer.DataLabels = true;
+            SumPie.Series.Add(netSer);
+            SumPie.LegendLocation= LegendLocation.Bottom;
+            //foreach (string category in categories.Distinct())
+            foreach (string category in DB.Instance.categories.Select(x => x.name))
+            {
+                double value = records.Where(x => x.Category.Contains(category) && x.Transaction != cashFlow.Income).Select(x => x.Value).Sum();
+                if (value == 0) continue;
+                PieSeries series = new PieSeries();
+                series.Title = category;
+                series.Values = new ChartValues<Double> { value };
+                Pie.Series.Add(series);
+            }
+            var a = new Axis();
+            a.Labels = records.Select(x => x.Date.ToString("d")).Distinct().ToList();
+            var b = new Axis();
+            //b.LabelFormatter=new Func<double, string>= ()=>{
 
-
+            //}
+            var expensesVals = new ChartValues<double>();
+            var incomeVals = new ChartValues<double>();
+            var NetVals = new ChartValues<double>();
+            foreach (string date in a.Labels)
+            {
+                double v = records.Where(x => x.Date.ToString("d") == date && x.Transaction == cashFlow.Expense)
+                    .Select(x => x.Value).ToList().Sum();
+                if (expensesVals.Count() > 0) expensesVals.Add(v + expensesVals.Last());
+                else expensesVals.Add(v);
+                double v2 = records.Where(x => x.Date.ToString("d") == date && x.Transaction == cashFlow.Income)
+                    .Select(x => x.Value).Sum();
+                if (incomeVals.Count() > 0) incomeVals.Add(v2 + incomeVals.Last());
+                else incomeVals.Add(v2);
+                NetVals.Add(incomeVals.Last() - expensesVals.Last());
+            }
+            a.Labels = a.Labels.Select(x => string.Join("/", x.Split('/')[0], x.Split('/')[1])).ToList();
+            Line.AxisX = new AxesCollection() { a };
+            Line.AxisY = new AxesCollection() { b };
+            var expansesLine = new LineSeries();
+            expansesLine.Values = expensesVals;
+            expansesLine.Title = "Expenses";
+            Line.Series.Add(expansesLine);
+            var incomeLine = new LineSeries();
+            incomeLine.Values = incomeVals;
+            incomeLine.Title = "Income";
+            Line.Series.Add(incomeLine);
+            var netLine = new LineSeries();
+            netLine.Values = NetVals;
+            netLine.Title = "Net";
+            Line.Series.Add(netLine);
+        }
+        private void AddRecord(object sender, RoutedEventArgs e)
+        {
+            AddRecord addRecordWindow = new AddRecord(user);
+            addRecordWindow.ShowDialog();
+            Refresh();
+        }
+        private void ExportRecords(object sender, RoutedEventArgs e)
+        {
+            var result = MessageBox.Show("You are about to export the data to excel file\nAre you sure?!", "Export! ",
+                MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (result == MessageBoxResult.No) return;
+            Export exp = new Export(innerRecords);
+        }
         private void EditRecord(object sender, RoutedEventArgs e)
         {
             Record record = datagrid.SelectedItem as Record;
             if (record == null)
             {
-                MessageBox.Show("Please select a record first.");
+                MessageBox.Show("Please select a record first.","Selection?",MessageBoxButton.OK,MessageBoxImage.Exclamation);
                 return;
             }
             AddRecord editRecord = new AddRecord(record);
             editRecord.ShowDialog();
             Refresh();
         }
-
         private List<Record> getItems(List<Category> cats)
         {
             List<Record> records = new List<Record>();
@@ -206,7 +272,6 @@ namespace Expenses
             }
             return (records.OrderBy(x => x.Date).ToList());
         }
-
         private void ChangeYear(object sender, SelectionChangedEventArgs e)
         {
             TabControl tc = (TabControl)sender;
@@ -222,9 +287,6 @@ namespace Expenses
             if (!Int32.TryParse(t.Header.ToString(), out year))
             {
                 datagrid.ItemsSource = null;
-                currentLabel.Content = "current: 0.00";
-                paidLable.Content = "Paid: 0.00";
-                incomeLabel.Content = "Income: 0.00";
                 return;
             }
             else
@@ -240,7 +302,7 @@ namespace Expenses
                 {
                     pickers.Add(item);
                 }
-                pickers.OrderByDescending(x => x.RB.Content).Last().RB.IsChecked = true;
+                pickers.OrderByDescending(x => x.RB.Content).First().RB.IsChecked = false;
                 pickers.OrderByDescending(x => x.RB.Content).First().RB.IsChecked = true;
             }
         }
@@ -282,11 +344,8 @@ namespace Expenses
             income = records.Where(x => x.Transaction == cashFlow.Income).Select(x => x.Value).Sum();
             payments = records.Where(x => x.Transaction == cashFlow.Expense).Select(x => x.Value).Sum();
             current = income - payments;
-            currentLabel.Content = "current: " + current.ToString();
-            paidLable.Content = "Paid: " + payments.ToString();
-            incomeLabel.Content = "Income: " + income.ToString();
+            DrawCharts();
         }
-
         private void CatFilter(object sender, RoutedEventArgs e)
         {
             List<string> openCats = new List<string>();
@@ -297,6 +356,7 @@ namespace Expenses
                 {
                     if (checker.CB.Content == "All") continue;
                     checker.CB.IsChecked = CB.IsChecked;
+                    if(checker.CB.IsChecked==true) openCats.Add(checker.CB.Content.ToString());
                 }
             }
             else
@@ -304,34 +364,37 @@ namespace Expenses
                 foreach (Checker checker in footer.Children)
                 {
                     CheckBox CB2 = checker.CB as CheckBox;
-                    if (CB2.IsChecked == false) innerRecords = innerRecords.Except(records.Where(x => x.Category == CB2.Content.ToString())).ToList();
-                    else innerRecords.AddRange(
-                        records.Where(x => x.Category == CB2.Content.ToString())
-                        );
+                    if (CB2.IsChecked == true) openCats.Add(CB2.Content.ToString());
                 }
             }
+            innerRecords=records.Where(x=>openCats.Contains(x.Category)).ToList();
             datagrid.ItemsSource = null;
             datagrid.ItemsSource = innerRecords.OrderBy(x => x.Date).Distinct();
         }
-
         private void back(object sender, RoutedEventArgs e)
         {
             MainWindow mw = new MainWindow();
             this.Close();
             mw.ShowDialog();
+            
         }
-
         private void DeleteRecord(object sender, RoutedEventArgs e)
         {
-            var result = MessageBox.Show("Are you sure you want to delete the record?", "Delete! ", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (datagrid.SelectedItem == null)
+            {
+                MessageBox.Show("You Haven't selected any!", "selection", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                return;
+            }
+            var result = MessageBox.Show("Are you sure you want to delete the record?", "Delete! ",
+                MessageBoxButton.YesNo, MessageBoxImage.Error);
             if (result == MessageBoxResult.Yes)
             {
                 Record record = datagrid.SelectedItem as Record;
                 Category category = DB.flatten(DB.Instance.categories).Where(x => x.getFullName() == record.Category).FirstOrDefault();
                 category.RemoveItem(record);
                 DB.Instance.sync();
-            }
             Refresh();
+            }
         }
     }
 }

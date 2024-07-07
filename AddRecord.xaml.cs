@@ -212,6 +212,7 @@ namespace Expenses
         }
         private void GetCatTree(TreeViewItem parent, List<Category> categories)
         {
+            categories=categories.OrderByDescending(x=>x.children.Count).ToList();
             if (parent == null)
             {
                 foreach (Category cat in categories)

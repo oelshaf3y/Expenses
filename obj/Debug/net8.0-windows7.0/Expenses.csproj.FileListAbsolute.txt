@@ -112,3 +112,14 @@ C:\Users\Omar.Elshafey\source\repos\oelshaf3y\Expenses\obj\Debug\net8.0-windows7
 C:\Users\Omar.Elshafey\source\repos\oelshaf3y\Expenses\obj\Debug\net8.0-windows7.0\Checker.baml
 C:\Users\Omar.Elshafey\source\repos\oelshaf3y\Expenses\obj\Debug\net8.0-windows7.0\Header.g.cs
 C:\Users\Omar.Elshafey\source\repos\oelshaf3y\Expenses\obj\Debug\net8.0-windows7.0\Header.baml
+C:\Users\oelsh\source\repos\oelshaf3y\Expenses\obj\Debug\net8.0-windows7.0\Checker.g.cs
+C:\Users\oelsh\source\repos\oelshaf3y\Expenses\obj\Debug\net8.0-windows7.0\Header.g.cs
+C:\Users\oelsh\source\repos\oelshaf3y\Expenses\obj\Debug\net8.0-windows7.0\Picker.g.cs
+C:\Users\oelsh\source\repos\oelshaf3y\Expenses\obj\Debug\net8.0-windows7.0\UserHolder.g.cs
+C:\Users\oelsh\source\repos\oelshaf3y\Expenses\obj\Debug\net8.0-windows7.0\App.baml
+C:\Users\oelsh\source\repos\oelshaf3y\Expenses\obj\Debug\net8.0-windows7.0\Checker.baml
+C:\Users\oelsh\source\repos\oelshaf3y\Expenses\obj\Debug\net8.0-windows7.0\Header.baml
+C:\Users\oelsh\source\repos\oelshaf3y\Expenses\obj\Debug\net8.0-windows7.0\Picker.baml
+C:\Users\oelsh\source\repos\oelshaf3y\Expenses\obj\Debug\net8.0-windows7.0\UserHolder.baml
+C:\Users\oelsh\source\repos\oelshaf3y\Expenses\obj\Debug\net8.0-windows7.0\Interop.Microsoft.Office.Interop.Excel.dll
+C:\Users\oelsh\source\repos\oelshaf3y\Expenses\obj\Debug\net8.0-windows7.0\Expenses.csproj.ResolveComReference.cache

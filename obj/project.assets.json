@@ -219,19 +219,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Omar.Elshafey\\.nuget\\packages\\": {}
+    "C:\\Users\\oelsh\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Omar.Elshafey\\source\\repos\\oelshaf3y\\Expenses\\Expenses.csproj",
+      "projectUniqueName": "C:\\Users\\oelsh\\source\\repos\\oelshaf3y\\Expenses\\Expenses.csproj",
       "projectName": "Expenses",
-      "projectPath": "C:\\Users\\Omar.Elshafey\\source\\repos\\oelshaf3y\\Expenses\\Expenses.csproj",
-      "packagesPath": "C:\\Users\\Omar.Elshafey\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Omar.Elshafey\\source\\repos\\oelshaf3y\\Expenses\\obj\\",
+      "projectPath": "C:\\Users\\oelsh\\source\\repos\\oelshaf3y\\Expenses\\Expenses.csproj",
+      "packagesPath": "C:\\Users\\oelsh\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\oelsh\\source\\repos\\oelshaf3y\\Expenses\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Omar.Elshafey\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\oelsh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -294,7 +294,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   },

@@ -4,7 +4,1904 @@
       "name": "Salary",
       "description": "",
       "children": [],
-      "items": [],
+      "items": [
+        {
+          "Info": "فلوس جيالى من عند الله",
+          "Value": 3000,
+          "Category": "Salary",
+          "Date": "2024-07-01T00:00:00",
+          "Transaction": 1,
+          "User": {
+            "initials": "NG",
+            "name": "Nesma Gamal"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "قبض",
+          "Value": 3000,
+          "Category": "Salary",
+          "Date": "2024-06-01T00:00:00",
+          "Transaction": 1,
+          "User": {
+            "initials": "NG",
+            "name": "Nesma Gamal"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "قبض",
+          "Value": 2000,
+          "Category": "Salary",
+          "Date": "2023-02-01T00:00:00",
+          "Transaction": 1,
+          "User": {
+            "initials": "NG",
+            "name": "Nesma Gamal"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "قبض",
+          "Value": 2000,
+          "Category": "Salary",
+          "Date": "2024-07-04T00:00:00",
+          "Transaction": 1,
+          "User": {
+            "initials": "NG",
+            "name": "Nesma Gamal"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "قبض شهر 6",
+          "Value": 24480,
+          "Category": "Salary",
+          "Date": "2024-07-01T00:00:00",
+          "Transaction": 1,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "من الشهر اللى فات",
+          "Value": 165,
+          "Category": "Salary",
+          "Date": "2024-07-01T00:00:00",
+          "Transaction": 1,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "قبض",
+          "Value": 24000,
+          "Category": "Salary",
+          "Date": "2024-06-01T00:00:00",
+          "Transaction": 1,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "من شهر 5",
+          "Value": 1180,
+          "Category": "Salary",
+          "Date": "2024-06-01T00:00:00",
+          "Transaction": 1,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "قبض",
+          "Value": 7500,
+          "Category": "Salary",
+          "Date": "2023-09-01T00:00:00",
+          "Transaction": 1,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "نقطة",
+          "Value": 450,
+          "Category": "Salary",
+          "Date": "2023-09-01T00:00:00",
+          "Transaction": 1,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "من نسمة ليا",
+          "Value": 530,
+          "Category": "Salary",
+          "Date": "2023-09-16T00:00:00",
+          "Transaction": 1,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        }
+      ],
+      "parent": null
+    },
+    {
+      "name": "فتح الله",
+      "description": "",
+      "children": [],
+      "items": [
+        {
+          "Info": "حاجات",
+          "Value": 2450,
+          "Category": "فتح الله",
+          "Date": "2024-07-03T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "NG",
+            "name": "Nesma Gamal"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "خزين",
+          "Value": 2000,
+          "Category": "فتح الله",
+          "Date": "2024-06-02T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "NG",
+            "name": "Nesma Gamal"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "خزين",
+          "Value": 1785,
+          "Category": "فتح الله",
+          "Date": "2024-06-01T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "خزين",
+          "Value": 2280,
+          "Category": "فتح الله",
+          "Date": "2024-06-14T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "خزين",
+          "Value": 480,
+          "Category": "فتح الله",
+          "Date": "2024-06-25T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "خزين",
+          "Value": 710,
+          "Category": "فتح الله",
+          "Date": "2023-09-16T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": {
+            "Name": "خزين",
+            "Value": 710,
+            "items": [
+              {
+                "Name": "كوين رول اكياس",
+                "Value": 23.53,
+                "Count": 1
+              },
+              {
+                "Name": "   سجق",
+                "Value": 72.1,
+                "Count": 1
+              },
+              {
+                "Name": "   لانشون فراخ اطياب",
+                "Value": 48.5,
+                "Count": 1
+              },
+              {
+                "Name": "   شيبسى",
+                "Value": 6.75,
+                "Count": 2
+              },
+              {
+                "Name": "   رول قمامة سيلا",
+                "Value": 33,
+                "Count": 1
+              },
+              {
+                "Name": "حليب بخيرة",
+                "Value": 32,
+                "Count": 1
+              },
+              {
+                "Name": "دقيق الصقر",
+                "Value": 19.5,
+                "Count": 1
+              },
+              {
+                "Name": "جبنة دوبل كريم",
+                "Value": 64.975,
+                "Count": 1
+              },
+              {
+                "Name": "جبنة مودزريلا",
+                "Value": 28.6,
+                "Count": 1
+              },
+              {
+                "Name": "جبنة رومى قديمة",
+                "Value": 113.775,
+                "Count": 1
+              },
+              {
+                "Name": "بيج شيبس",
+                "Value": 19.5,
+                "Count": 1
+              },
+              {
+                "Name": "   كبدة",
+                "Value": 60.95,
+                "Count": 1
+              },
+              {
+                "Name": "سكر حكاية",
+                "Value": 58,
+                "Count": 1
+              },
+              {
+                "Name": "ذرة فشار",
+                "Value": 23.52,
+                "Count": 1
+              },
+              {
+                "Name": "سلطة بسطرمة",
+                "Value": 24.75,
+                "Count": 1
+              },
+              {
+                "Name": "سلطة فاهيتا",
+                "Value": 20.8,
+                "Count": 1
+              },
+              {
+                "Name": "خل هارفست",
+                "Value": 11.5,
+                "Count": 1
+              },
+              {
+                "Name": "زيت حلوة 700مل",
+                "Value": 41.5,
+                "Count": 1
+              }
+            ]
+          }
+        }
+      ],
+      "parent": null
+    },
+    {
+      "name": "فواتير",
+      "description": "",
+      "children": [
+        {
+          "name": "كهرباء",
+          "description": "",
+          "children": [],
+          "items": [
+            {
+              "Info": "فاتورة",
+              "Value": 160,
+              "Category": "فواتير.كهرباء",
+              "Date": "2023-09-03T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            }
+          ],
+          "parent": "فواتير"
+        },
+        {
+          "name": "مياه",
+          "description": "",
+          "children": [],
+          "items": [
+            {
+              "Info": "فاتورة",
+              "Value": 80,
+              "Category": "فواتير.مياه",
+              "Date": "2024-06-22T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "فاتورة",
+              "Value": 10,
+              "Category": "فواتير.مياه",
+              "Date": "2023-09-20T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            }
+          ],
+          "parent": "فواتير"
+        },
+        {
+          "name": "غاز",
+          "description": "",
+          "children": [],
+          "items": [
+            {
+              "Info": "فاتورة شهر 6",
+              "Value": 17,
+              "Category": "فواتير.غاز",
+              "Date": "2024-07-07T00:00:00+03:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "NG",
+                "name": "Nesma Gamal"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "فاتورة",
+              "Value": 45,
+              "Category": "فواتير.غاز",
+              "Date": "2024-06-14T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            }
+          ],
+          "parent": "فواتير"
+        },
+        {
+          "name": "نت وموبايل",
+          "description": "",
+          "children": [],
+          "items": [
+            {
+              "Info": "نت شهر 6",
+              "Value": 240,
+              "Category": "فواتير.نت وموبايل",
+              "Date": "2024-06-06T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "شحن رصيد",
+              "Value": 150,
+              "Category": "فواتير.نت وموبايل",
+              "Date": "2024-06-06T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "شحن رصيد",
+              "Value": 100,
+              "Category": "فواتير.نت وموبايل",
+              "Date": "2024-06-16T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "شحن",
+              "Value": 30,
+              "Category": "فواتير.نت وموبايل",
+              "Date": "2023-09-17T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "شحن لنسمة",
+              "Value": 40,
+              "Category": "فواتير.نت وموبايل",
+              "Date": "2023-09-26T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "شحن",
+              "Value": 10,
+              "Category": "فواتير.نت وموبايل",
+              "Date": "2023-09-25T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            }
+          ],
+          "parent": "فواتير"
+        }
+      ],
+      "items": [
+        {
+          "Info": "مصاريف البنك",
+          "Value": 200,
+          "Category": "فواتير",
+          "Date": "2023-09-23T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        }
+      ],
+      "parent": null
+    },
+    {
+      "name": "مواصلات",
+      "description": "",
+      "children": [],
+      "items": [
+        {
+          "Info": "مواصلات",
+          "Value": 4,
+          "Category": "مواصلات",
+          "Date": "2024-07-05T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "NG",
+            "name": "Nesma Gamal"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "مواصلات",
+          "Value": 12,
+          "Category": "مواصلات",
+          "Date": "2024-07-01T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "مواصلات",
+          "Value": 20,
+          "Category": "مواصلات",
+          "Date": "2024-07-02T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "مواصلات",
+          "Value": 12,
+          "Category": "مواصلات",
+          "Date": "2024-07-03T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "مواصلات",
+          "Value": 12,
+          "Category": "مواصلات",
+          "Date": "2024-07-04T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "مواصلات",
+          "Value": 20,
+          "Category": "مواصلات",
+          "Date": "2024-07-06T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "مواصلات",
+          "Value": 12,
+          "Category": "مواصلات",
+          "Date": "2024-07-07T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "القرية",
+          "Value": 600,
+          "Category": "مواصلات",
+          "Date": "2024-06-16T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "مواصلات الشغل ",
+          "Value": 172,
+          "Category": "مواصلات",
+          "Date": "2024-06-30T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "مواصلات",
+          "Value": 230,
+          "Category": "مواصلات",
+          "Date": "2023-09-27T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        }
+      ],
+      "parent": null
+    },
+    {
+      "name": "فسح وخروجات",
+      "description": "",
+      "children": [],
+      "items": [
+        {
+          "Info": "مع نسمة",
+          "Value": 260,
+          "Category": "فسح وخروجات",
+          "Date": "2024-06-03T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "مع نسمة",
+          "Value": 350,
+          "Category": "فسح وخروجات",
+          "Date": "2024-06-08T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "قهوة وبلايستيشن",
+          "Value": 50,
+          "Category": "فسح وخروجات",
+          "Date": "2024-06-27T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "القرية",
+          "Value": 205,
+          "Category": "فسح وخروجات",
+          "Date": "2023-09-10T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "قهوة وبلايستيشن",
+          "Value": 100,
+          "Category": "فسح وخروجات",
+          "Date": "2023-09-15T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        }
+      ],
+      "parent": null
+    },
+    {
+      "name": "مطاعم",
+      "description": "",
+      "children": [],
+      "items": [
+        {
+          "Info": "خروجه مع نسمة",
+          "Value": 740,
+          "Category": "مطاعم",
+          "Date": "2024-07-02T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": {
+            "Name": "خروجه مع نسمة",
+            "Value": 740,
+            "items": [
+              {
+                "Name": "شاورما عربى دابل",
+                "Value": 200,
+                "Count": 1
+              },
+              {
+                "Name": "نص فرخة مسخن",
+                "Value": 200,
+                "Count": 1
+              },
+              {
+                "Name": "نص فرخة تكا",
+                "Value": 340,
+                "Count": 1
+              }
+            ]
+          }
+        },
+        {
+          "Info": "بيتزا",
+          "Value": 420,
+          "Category": "مطاعم",
+          "Date": "2024-06-28T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "فتة",
+          "Value": 130,
+          "Category": "مطاعم",
+          "Date": "2023-09-12T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "فطار فى الشغل",
+          "Value": 30,
+          "Category": "مطاعم",
+          "Date": "2023-09-26T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        }
+      ],
+      "parent": null
+    },
+    {
+      "name": "تحويش",
+      "description": "",
+      "children": [],
+      "items": [
+        {
+          "Info": "تحويش",
+          "Value": 8000,
+          "Category": "تحويش",
+          "Date": "2024-07-03T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "عمر",
+          "Value": 8000,
+          "Category": "تحويش",
+          "Date": "2024-07-01T00:00:00",
+          "Transaction": 1,
+          "User": {
+            "initials": "S",
+            "name": "Savings"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "عمر",
+          "Value": 7000,
+          "Category": "تحويش",
+          "Date": "2024-06-01T00:00:00",
+          "Transaction": 1,
+          "User": {
+            "initials": "S",
+            "name": "Savings"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "عمر",
+          "Value": 5000,
+          "Category": "تحويش",
+          "Date": "2024-05-01T00:00:00",
+          "Transaction": 1,
+          "User": {
+            "initials": "S",
+            "name": "Savings"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "عمر",
+          "Value": 3000,
+          "Category": "تحويش",
+          "Date": "2024-04-01T00:00:00",
+          "Transaction": 1,
+          "User": {
+            "initials": "S",
+            "name": "Savings"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "عمر",
+          "Value": 2000,
+          "Category": "تحويش",
+          "Date": "2024-03-01T00:00:00",
+          "Transaction": 1,
+          "User": {
+            "initials": "S",
+            "name": "Savings"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "تحويش",
+          "Value": 7000,
+          "Category": "تحويش",
+          "Date": "2024-06-01T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        }
+      ],
+      "parent": null
+    },
+    {
+      "name": "منى لنسمة",
+      "description": "",
+      "children": [],
+      "items": [
+        {
+          "Info": "لنسمة",
+          "Value": 3000,
+          "Category": "منى لنسمة",
+          "Date": "2024-07-03T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "مصروف",
+          "Value": 3000,
+          "Category": "منى لنسمة",
+          "Date": "2024-06-01T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "على مدار الشهر",
+          "Value": 70,
+          "Category": "منى لنسمة",
+          "Date": "2024-06-30T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        }
+      ],
+      "parent": null
+    },
+    {
+      "name": "Vape",
+      "description": "",
+      "children": [
+        {
+          "name": "Liquid",
+          "description": "",
+          "children": [],
+          "items": [
+            {
+              "Info": "ليكويد",
+              "Value": 200,
+              "Category": "Vape.Liquid",
+              "Date": "2024-07-03T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "ليكويد + قطن",
+              "Value": 230,
+              "Category": "Vape.Liquid",
+              "Date": "2024-06-03T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "ليكويد",
+              "Value": 200,
+              "Category": "Vape.Liquid",
+              "Date": "2024-06-14T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "ليكويد",
+              "Value": 200,
+              "Category": "Vape.Liquid",
+              "Date": "2024-06-21T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "ليكويد",
+              "Value": 250,
+              "Category": "Vape.Liquid",
+              "Date": "2023-09-09T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "ليكويد",
+              "Value": 150,
+              "Category": "Vape.Liquid",
+              "Date": "2023-09-15T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            }
+          ],
+          "parent": "Vape"
+        }
+      ],
+      "items": [
+        {
+          "Info": "سجاير + ولاعة",
+          "Value": 85,
+          "Category": "Vape",
+          "Date": "2024-06-19T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        }
+      ],
+      "parent": null
+    },
+    {
+      "name": "لوازم المنزل",
+      "description": "",
+      "children": [
+        {
+          "name": "خضار وفاكهه ",
+          "description": "",
+          "children": [],
+          "items": [
+            {
+              "Info": "يوم الجمعة",
+              "Value": 195,
+              "Category": "لوازم المنزل.خضار وفاكهه ",
+              "Date": "2024-07-05T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": {
+                "Name": "يوم الجمعة",
+                "Value": 195,
+                "items": [
+                  {
+                    "Name": "فول",
+                    "Value": 5,
+                    "Count": 1
+                  },
+                  {
+                    "Name": "لبن وجبنة",
+                    "Value": 110,
+                    "Count": 1
+                  },
+                  {
+                    "Name": "شيبسى",
+                    "Value": 10,
+                    "Count": 4
+                  },
+                  {
+                    "Name": "بقسماط",
+                    "Value": 25,
+                    "Count": 1
+                  },
+                  {
+                    "Name": "عيش",
+                    "Value": 1.5,
+                    "Count": 10
+                  }
+                ]
+              }
+            },
+            {
+              "Info": "بطاطس",
+              "Value": 50,
+              "Category": "لوازم المنزل.خضار وفاكهه ",
+              "Date": "2024-06-09T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "موز وتفاح",
+              "Value": 120,
+              "Category": "لوازم المنزل.خضار وفاكهه ",
+              "Date": "2024-06-11T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "موز",
+              "Value": 40,
+              "Category": "لوازم المنزل.خضار وفاكهه ",
+              "Date": "2024-06-23T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "خضار",
+              "Value": 40,
+              "Category": "لوازم المنزل.خضار وفاكهه ",
+              "Date": "2024-06-28T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "مانجو",
+              "Value": 195,
+              "Category": "لوازم المنزل.خضار وفاكهه ",
+              "Date": "2024-06-30T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": {
+                "Name": "مانجو",
+                "Value": 195,
+                "items": [
+                  {
+                    "Name": "عويس",
+                    "Value": 80,
+                    "Count": 2
+                  },
+                  {
+                    "Name": "زبدة",
+                    "Value": 35,
+                    "Count": 1
+                  }
+                ]
+              }
+            },
+            {
+              "Info": "خضار وفاكهه",
+              "Value": 160,
+              "Category": "لوازم المنزل.خضار وفاكهه ",
+              "Date": "2023-09-04T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "فطار وخضار",
+              "Value": 100,
+              "Category": "لوازم المنزل.خضار وفاكهه ",
+              "Date": "2023-09-16T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "سكر وبازلاء",
+              "Value": 90,
+              "Category": "لوازم المنزل.خضار وفاكهه ",
+              "Date": "2023-09-18T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "خضار",
+              "Value": 50,
+              "Category": "لوازم المنزل.خضار وفاكهه ",
+              "Date": "2023-09-21T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "بطاطس وبصل",
+              "Value": 43,
+              "Category": "لوازم المنزل.خضار وفاكهه ",
+              "Date": "2023-09-29T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            }
+          ],
+          "parent": "لوازم المنزل"
+        },
+        {
+          "name": "حلويات وحوادق",
+          "description": "",
+          "children": [],
+          "items": [
+            {
+              "Info": "ايس كريم",
+              "Value": 80,
+              "Category": "لوازم المنزل.حلويات وحوادق",
+              "Date": "2024-07-06T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "مارفيل",
+              "Value": 240,
+              "Category": "لوازم المنزل.حلويات وحوادق",
+              "Date": "2024-06-04T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "شيبسى",
+              "Value": 40,
+              "Category": "لوازم المنزل.حلويات وحوادق",
+              "Date": "2024-06-08T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": {
+                "Name": "شيبسى",
+                "Value": 40,
+                "items": [
+                  {
+                    "Name": "شيبسى",
+                    "Value": 10,
+                    "Count": 4
+                  }
+                ]
+              }
+            },
+            {
+              "Info": "عصير وشيبسى",
+              "Value": 115,
+              "Category": "لوازم المنزل.حلويات وحوادق",
+              "Date": "2024-06-11T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": {
+                "Name": "عصير وشيبسى",
+                "Value": 115,
+                "items": [
+                  {
+                    "Name": "عصير",
+                    "Value": 65,
+                    "Count": 1
+                  },
+                  {
+                    "Name": "شيبسى",
+                    "Value": 50,
+                    "Count": 1
+                  }
+                ]
+              }
+            },
+            {
+              "Info": "شيبسى",
+              "Value": 40,
+              "Category": "لوازم المنزل.حلويات وحوادق",
+              "Date": "2024-06-21T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "مارفيل",
+              "Value": 140,
+              "Category": "لوازم المنزل.حلويات وحوادق",
+              "Date": "2024-06-23T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "ايس كريم",
+              "Value": 70,
+              "Category": "لوازم المنزل.حلويات وحوادق",
+              "Date": "2023-09-05T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "شيبسى",
+              "Value": 30,
+              "Category": "لوازم المنزل.حلويات وحوادق",
+              "Date": "2023-09-06T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "شيبسى وبيبسى",
+              "Value": 36,
+              "Category": "لوازم المنزل.حلويات وحوادق",
+              "Date": "2023-09-11T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "لب وسودانى وبيبسى",
+              "Value": 100,
+              "Category": "لوازم المنزل.حلويات وحوادق",
+              "Date": "2023-09-14T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "بيبسى",
+              "Value": 40,
+              "Category": "لوازم المنزل.حلويات وحوادق",
+              "Date": "2023-09-22T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "ايس كريم",
+              "Value": 70,
+              "Category": "لوازم المنزل.حلويات وحوادق",
+              "Date": "2023-09-25T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "شيبسى",
+              "Value": 14,
+              "Category": "لوازم المنزل.حلويات وحوادق",
+              "Date": "2023-09-28T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            }
+          ],
+          "parent": "لوازم المنزل"
+        },
+        {
+          "name": "عيش",
+          "description": "",
+          "children": [],
+          "items": [
+            {
+              "Info": "فينو",
+              "Value": 40,
+              "Category": "لوازم المنزل.عيش",
+              "Date": "2024-07-07T00:00:00+03:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": {
+                "Name": "فينو",
+                "Value": 40,
+                "items": [
+                  {
+                    "Name": "فينو",
+                    "Value": 20,
+                    "Count": 1
+                  },
+                  {
+                    "Name": "كايزر",
+                    "Value": 10,
+                    "Count": 2
+                  }
+                ]
+              }
+            },
+            {
+              "Info": "فينو",
+              "Value": 10,
+              "Category": "لوازم المنزل.عيش",
+              "Date": "2024-06-05T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "فينو",
+              "Value": 10,
+              "Category": "لوازم المنزل.عيش",
+              "Date": "2024-06-08T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "فينو وكايزر",
+              "Value": 50,
+              "Category": "لوازم المنزل.عيش",
+              "Date": "2024-06-09T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "فينو وابيض",
+              "Value": 40,
+              "Category": "لوازم المنزل.عيش",
+              "Date": "2024-06-24T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "كايزر",
+              "Value": 30,
+              "Category": "لوازم المنزل.عيش",
+              "Date": "2023-09-28T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            }
+          ],
+          "parent": "لوازم المنزل"
+        },
+        {
+          "name": "سوبرماركت",
+          "description": "",
+          "children": [],
+          "items": [
+            {
+              "Info": "جبنة وشيبسى",
+              "Value": 120,
+              "Category": "لوازم المنزل.سوبرماركت",
+              "Date": "2024-06-01T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "لبن وكاكاو",
+              "Value": 70,
+              "Category": "لوازم المنزل.سوبرماركت",
+              "Date": "2024-06-12T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "جبن وبيض ولبن",
+              "Value": 305,
+              "Category": "لوازم المنزل.سوبرماركت",
+              "Date": "2024-06-17T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "مكنة حلاقة وشيبسى",
+              "Value": 53,
+              "Category": "لوازم المنزل.سوبرماركت",
+              "Date": "2024-06-18T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "بن ومانجو وعيش فينو",
+              "Value": 150,
+              "Category": "لوازم المنزل.سوبرماركت",
+              "Date": "2023-09-07T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "رنجة وبطاطس وعيش",
+              "Value": 140,
+              "Category": "لوازم المنزل.سوبرماركت",
+              "Date": "2023-09-11T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "زبادى وشيبسى",
+              "Value": 32,
+              "Category": "لوازم المنزل.سوبرماركت",
+              "Date": "2023-09-13T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            }
+          ],
+          "parent": "لوازم المنزل"
+        },
+        {
+          "name": "لحوم واسماك",
+          "description": "",
+          "children": [],
+          "items": [
+            {
+              "Info": "4 فرخات",
+              "Value": 570,
+              "Category": "لوازم المنزل.لحوم واسماك",
+              "Date": "2023-09-07T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "فراخ",
+              "Value": 165,
+              "Category": "لوازم المنزل.لحوم واسماك",
+              "Date": "2023-09-18T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            }
+          ],
+          "parent": "لوازم المنزل"
+        }
+      ],
+      "items": [
+        {
+          "Info": "دولاب",
+          "Value": 5000,
+          "Category": "لوازم المنزل",
+          "Date": "2024-06-01T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "S",
+            "name": "Savings"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "فطار",
+          "Value": 20,
+          "Category": "لوازم المنزل",
+          "Date": "2024-06-14T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "فطار",
+          "Value": 20,
+          "Category": "لوازم المنزل",
+          "Date": "2024-06-28T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "بيض+حجارة",
+          "Value": 120,
+          "Category": "لوازم المنزل",
+          "Date": "2024-06-30T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "سلك نت وصرف حوض",
+          "Value": 85,
+          "Category": "لوازم المنزل",
+          "Date": "2023-09-08T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        }
+      ],
+      "parent": null
+    },
+    {
+      "name": "جمعية",
+      "description": "",
+      "children": [],
+      "items": [
+        {
+          "Info": "شهر 6",
+          "Value": 2000,
+          "Category": "جمعية",
+          "Date": "2024-06-01T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "شهر 7",
+          "Value": 2000,
+          "Category": "جمعية",
+          "Date": "2024-07-01T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "قسط محرم",
+          "Value": 1000,
+          "Category": "جمعية",
+          "Date": "2023-09-02T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "جمعية خالتى",
+          "Value": 2000,
+          "Category": "جمعية",
+          "Date": "2023-09-02T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        }
+      ],
+      "parent": null
+    },
+    {
+      "name": "علاج ودكاترة",
+      "description": "",
+      "children": [],
+      "items": [
+        {
+          "Info": "دوا",
+          "Value": 455,
+          "Category": "علاج ودكاترة",
+          "Date": "2024-06-09T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "دوا",
+          "Value": 125,
+          "Category": "علاج ودكاترة",
+          "Date": "2024-06-15T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        }
+      ],
+      "parent": null
+    },
+    {
+      "name": "الاهل",
+      "description": "",
+      "children": [
+        {
+          "name": "سلمى",
+          "description": "",
+          "children": [],
+          "items": [
+            {
+              "Info": "هدية نجاح",
+              "Value": 100,
+              "Category": "الاهل.سلمى",
+              "Date": "2024-06-12T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            },
+            {
+              "Info": "شحن",
+              "Value": 50,
+              "Category": "الاهل.سلمى",
+              "Date": "2024-06-16T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            }
+          ],
+          "parent": "الاهل"
+        },
+        {
+          "name": "خالد",
+          "description": "",
+          "children": [],
+          "items": [
+            {
+              "Info": "تحويل لخالد",
+              "Value": 300,
+              "Category": "الاهل.خالد",
+              "Date": "2024-06-21T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            }
+          ],
+          "parent": "الاهل"
+        },
+        {
+          "name": "امى",
+          "description": "",
+          "children": [],
+          "items": [
+            {
+              "Info": "قسط",
+              "Value": 800,
+              "Category": "الاهل.امى",
+              "Date": "2023-09-02T00:00:00",
+              "Transaction": 0,
+              "User": {
+                "initials": "O",
+                "name": "Omar"
+              },
+              "GroceryList": null
+            }
+          ],
+          "parent": "الاهل"
+        }
+      ],
+      "items": [
+        {
+          "Info": "عيديات",
+          "Value": 2350,
+          "Category": "الاهل",
+          "Date": "2024-06-16T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        },
+        {
+          "Info": "تورته زيارة لروان",
+          "Value": 160,
+          "Category": "الاهل",
+          "Date": "2023-09-05T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        }
+      ],
+      "parent": null
+    },
+    {
+      "name": "حلاقة",
+      "description": "",
+      "children": [],
+      "items": [
+        {
+          "Info": "حلاقة",
+          "Value": 100,
+          "Category": "حلاقة",
+          "Date": "2023-09-06T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        }
+      ],
+      "parent": null
+    },
+    {
+      "name": "مفقود",
+      "description": "",
+      "children": [],
+      "items": [
+        {
+          "Info": "شهر 9",
+          "Value": 147,
+          "Category": "مفقود",
+          "Date": "2023-09-30T00:00:00",
+          "Transaction": 0,
+          "User": {
+            "initials": "O",
+            "name": "Omar"
+          },
+          "GroceryList": null
+        }
+      ],
       "parent": null
     }
   ],
@@ -12,6 +1909,14 @@
     {
       "initials": "O",
       "name": "Omar"
+    },
+    {
+      "initials": "NG",
+      "name": "Nesma Gamal"
+    },
+    {
+      "initials": "S",
+      "name": "Savings"
     }
   ],
   "currentUser": null

@@ -11,18 +11,18 @@
     <Grid>
         <TextBox x:Name="textBox1"  VerticalAlignment="Top"  materialDesign:HintAssist.Hint="Info"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="10,10,0,0" HorizontalAlignment="Left" Width="120"  />
         <TextBox x:Name="textbox2"  VerticalAlignment="Top"  materialDesign:HintAssist.Hint="Amount"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="10,64,0,0" HorizontalAlignment="Left" Width="120"  />
-        <Button Margin="0,146,32,0" Click="SaveRecord" materialDesign:ElevationAssist.Elevation="Dp0" Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Height="40" VerticalAlignment="Top" HorizontalAlignment="Right">
+        <DatePicker x:Name="DPicker" Margin="0,95,10,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="86"/>
+        <Button Margin="0,146,32,0" Click="SaveRecord" IsDefault="True" materialDesign:ElevationAssist.Elevation="Dp0" Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Height="40" VerticalAlignment="Top" HorizontalAlignment="Right">
             <materialDesign:PackIcon Kind="ContentSave"/>
         </Button>
         <Button IsCancel="True" Margin="0,201,32,0" Click="Button_Click" materialDesign:ElevationAssist.Elevation="Dp0" Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Height="40" VerticalAlignment="Top" HorizontalAlignment="Right">
             <materialDesign:PackIcon Kind="CancelBold"/>
         </Button>
         <CheckBox x:Name="income" Content="Income" IsChecked="False" Style="{StaticResource MaterialDesignFilterChipPrimaryCheckBox}" Margin="0,23,10,0" Height="32" VerticalAlignment="Top" HorizontalAlignment="Right"  />
-        <DatePicker x:Name="DPicker" Margin="0,95,10,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="86"/>
         <Button x:Name="addListBut" Margin="227,0,0,19" Click="AddList" materialDesign:ElevationAssist.Elevation="Dp0" Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Height="40" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="40">
             <materialDesign:PackIcon Name="addListButIco" Kind="Cart"/>
         </Button>
-        <DataGrid x:Name="dataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="214,23,127,64" IsEnabled="False" />
+        <DataGrid x:Name="dataGrid" IsReadOnly="True" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="214,23,127,64" />
         <Button Margin="10,0,0,19" Click="Button_Click_1" materialDesign:ElevationAssist.Elevation="Dp0" Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Height="40" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="40">
             <materialDesign:PackIcon Kind="PlusBold"/>
         </Button>
