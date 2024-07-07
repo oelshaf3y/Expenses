@@ -22,25 +22,27 @@ namespace Expenses
     public partial class UserHolder : UserControl
     {
         MainWindow mw;
+        public Func<bool> func { get; set; }
         public UserHolder(MainWindow mw)
         {
             this.mw = mw;
+            this.func = null;
             InitializeComponent();
         }
-        private void SetCurrentUser(object sender = null, RoutedEventArgs e = null)
+        public void del(object sender, RoutedEventArgs e)
         {
-            try
+            func();
+        }
+        private void SetCurrentUser(object sender, RoutedEventArgs e)
+        {
+            if (mw != null)
             {
-
-                Person user = DB.Instance.users.Where(x => this.userchip.Content == x.name).First();
+                Person user = DB.Instance.users.Where(x => userchip.Content.ToString() == x.name).First();
                 DB.Instance.setCurrentUser(user);
                 UserUI ui = new UserUI(user);
                 mw.Close();
                 ui.ShowDialog();
-            }
-            catch
-            {
-                return;
+
             }
         }
     }

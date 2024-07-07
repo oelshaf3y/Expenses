@@ -51,8 +51,9 @@ namespace Expenses
                 UserHolder holder = new UserHolder(this);
                 holder.userchip.Content = user.name;
                 holder.userchip.Icon = user.initials;
-                holder.userchip.Width=this.Width/3;
-                holder.userchip.Height=this.Height/3;
+                holder.userchip.Width = this.Width / DB.Instance.users.Count -50;
+                holder.userchip.MinWidth = this.Width / 3 -50;
+                holder.userchip.Height = this.Height / DB.Instance.users.Count-50;
                 Content.Children.Add(holder);
 
             }

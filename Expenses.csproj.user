@@ -19,6 +19,15 @@
     <Compile Update="AddUser.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Checker.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Header.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Picker.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="UserHolder.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -39,7 +48,16 @@
     <Page Update="AddUser.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Checker.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Header.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Picker.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UserHolder.xaml">

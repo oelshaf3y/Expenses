@@ -9,7 +9,7 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <StackPanel x:Name="userpanel" Width="auto" Height="auto">
-            <materialDesign:Chip x:Name="userchip" Content="ANZ Bank" Click="SetCurrentUser" Icon="A"  />
+            <materialDesign:Chip x:Name="userchip" Content="ANZ Bank" Click="SetCurrentUser" Icon="A" DeleteClick="del" />
         </StackPanel>
     </Grid>
 </UserControl>

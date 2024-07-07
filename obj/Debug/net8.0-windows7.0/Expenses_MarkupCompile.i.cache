@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\Omar.Elshafey\source\repos\oelshaf3y\Expenses\App.xaml
-771742466
+10-1435527382
 
-1823691899
+21-1437160329
 203-1588322710
-AddCategory.xaml;AddGroceryList.xaml;AddRecord.xaml;AddUser.xaml;MainWindow.xaml;UserHolder.xaml;UserUI.xaml;
+AddCategory.xaml;AddGroceryList.xaml;AddRecord.xaml;AddUser.xaml;Checker.xaml;Header.xaml;MainWindow.xaml;Picker.xaml;UserHolder.xaml;UserUI.xaml;
 
 True
 

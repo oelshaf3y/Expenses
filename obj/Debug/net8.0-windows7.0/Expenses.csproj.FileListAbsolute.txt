@@ -106,3 +106,9 @@ C:\Users\Omar.Elshafey\Source\Repos\oelshaf3y\Expenses\obj\Debug\net8.0-windows7
 C:\Users\Omar.Elshafey\Source\Repos\oelshaf3y\Expenses\obj\Debug\net8.0-windows7.0\Expenses.csproj.Up2Date
 C:\Users\Omar.Elshafey\Source\Repos\oelshaf3y\Expenses\obj\Debug\net8.0-windows7.0\UserHolder.g.cs
 C:\Users\Omar.Elshafey\Source\Repos\oelshaf3y\Expenses\obj\Debug\net8.0-windows7.0\UserHolder.baml
+C:\Users\Omar.Elshafey\source\repos\oelshaf3y\Expenses\obj\Debug\net8.0-windows7.0\Picker.g.cs
+C:\Users\Omar.Elshafey\source\repos\oelshaf3y\Expenses\obj\Debug\net8.0-windows7.0\Picker.baml
+C:\Users\Omar.Elshafey\source\repos\oelshaf3y\Expenses\obj\Debug\net8.0-windows7.0\Checker.g.cs
+C:\Users\Omar.Elshafey\source\repos\oelshaf3y\Expenses\obj\Debug\net8.0-windows7.0\Checker.baml
+C:\Users\Omar.Elshafey\source\repos\oelshaf3y\Expenses\obj\Debug\net8.0-windows7.0\Header.g.cs
+C:\Users\Omar.Elshafey\source\repos\oelshaf3y\Expenses\obj\Debug\net8.0-windows7.0\Header.baml

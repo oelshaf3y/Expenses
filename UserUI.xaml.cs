@@ -1,6 +1,8 @@
-﻿using System;
+﻿using MaterialDesignThemes.Wpf;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -13,6 +15,10 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using static MaterialDesignThemes.Wpf.Theme;
 using static System.Net.Mime.MediaTypeNames;
+using Button = System.Windows.Controls.Button;
+using CheckBox = System.Windows.Controls.CheckBox;
+using RadioButton = System.Windows.Controls.RadioButton;
+using TabControl = System.Windows.Controls.TabControl;
 
 namespace Expenses
 {
@@ -29,6 +35,8 @@ namespace Expenses
         public double payments;
         public double current;
         List<Record> records;
+        TabControl tabControl;
+        List<Record> innerRecords = new List<Record>();
         List<string> categories = new List<string>();
         public Person user;
         public UserUI(Person user)
@@ -38,30 +46,50 @@ namespace Expenses
             this.user = user;
             DB.Instance.setCurrentUser(user);
             SetCurrentUser(this.user);
-            UserName.Content = this.user;
-            UserName.Icon = this.user.initials;
+            //UserName.Content = this.user;
+            //UserName.Icon = this.user.initials;
         }
-        private void EndTask(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-        }
+
 
         private void AddRecord(object sender, RoutedEventArgs e)
         {
             AddRecord addRecordWindow = new AddRecord(user);
             addRecordWindow.ShowDialog();
-            int index = monthPicker.SelectedIndex;
-            monthPicker.SelectedIndex = 0;
-            monthPicker.SelectedIndex = index;
+            Refresh();
+        }
+
+        private void Refresh()
+        {
+            TabItem t = tabControl.SelectedItem as TabItem;
+            if (t.Content == null) { GetTabs(); return; }
+            WrapPanel wp = t.Content as WrapPanel;
+            for (int i = 0; i < wp.Children.Count; i++)
+            {
+                Picker mp = wp.Children[i] as Picker;
+                if (mp.RB.IsChecked == true)
+                {
+                    if (i != 0)
+                    {
+                        Picker op = wp.Children[0] as Picker;
+                        op.RB.IsChecked = true;
+                        mp.RB.IsChecked = true;
+                    }
+                    else
+                    {
+                        Picker op = wp.Children[1] as Picker;
+                        op.RB.IsChecked = true;
+                        mp.RB.IsChecked = true;
+                    }
+                }
+            }
         }
 
         private void SetCurrentUser(Person user)
         {
             DB.Instance.setCurrentUser(user);
-            yearPicker.SelectedIndex = -1;
-            monthPicker.SelectedIndex = -1;
             records = getItems(DB.Instance.categories);
             years = records.Select(x => x.Date.Year).Distinct().ToList();
+
             if (years.Count == 0)
             {
                 year = -1;
@@ -71,27 +99,86 @@ namespace Expenses
                 incomeLabel.Content = "Income: 0.00";
                 years = new List<int>();
                 months = new List<int>();
-                yearPicker.ItemsSource = null;
-                monthPicker.ItemsSource = null;
             }
             else
             {
-                years.Sort();
-                yearPicker.ItemsSource = years;
-                if (years.Contains(DateTime.Now.Date.Year)) year = DateTime.Now.Date.Year;
-                else year = years.Last();
-                yearPicker.SelectedIndex = years.IndexOf(year);
+                years.Sort((x, y) => y.CompareTo(x));
+                //yearPicker.ItemsSource = years;
+
+                //if (years.Contains(DateTime.Now.Date.Year)) year = DateTime.Now.Date.Year;
+                //else year = years.First();
+                //yearPicker.SelectedIndex = years.IndexOf(year);
             }
+            GetTabs();
 
         }
 
+        private void GetTabs()
+        {
+            if (msp.Children.Count > 0)
+            {
+                msp.Children.RemoveAt(0);
+                UpdateLayout();
+            }
+            Header tc = new Header();
+            tabControl=tc.tabControl;
+            Button back = new Button();
+            back.Click += this.back;
+            PackIcon butIco = new PackIcon();
+            butIco.Kind = PackIconKind.ArrowBack;
+            back.Content = butIco;
+            back.Width = 50;
+            StackPanel sp = new StackPanel();
+            sp.Children.Add(back);
+            TabItem t = new TabItem();
+            t.Header = sp;
+            tabControl.Items.Add(t);
+            foreach (int y in years)
+            {
+                records = getItems(DB.Instance.categories).Where(x => x.Date.Year == y).ToList();
+                months = records.Select(x => x.Date.Month).Distinct().ToList();
+                months.Add(0);
+                months.Sort((x, y) => y.CompareTo(x));
+                TabItem tab = new TabItem();
+                tab.Header = y.ToString();
+                tabControl.SelectionChanged += (object sender, SelectionChangedEventArgs e) =>
+                {
+                    ChangeYear(sender, e);
+                };
+                WrapPanel wp = new WrapPanel();
+                string GroupName = y.ToString();
+                foreach (int m in months)
+                {
+                    Picker mp = new Picker(y, m);
+
+                    mp.RB.Checked += ChangeMonth;
+                    wp.Children.Add(mp);
+                }
+                tab.Content = wp;
+                tabControl.Items.Add(tab);
+            }
+            UserHolder userholder = new UserHolder(null);
+            userholder.func = () =>
+            {
+                this.Close();
+                return true;
+            };
+            userholder.userchip.IsDeletable = true;
+            userholder.userchip.Content = user.name;
+            userholder.userchip.Icon = user.initials;
+            TabItem t2 = new TabItem();
+            t2.Header = userholder;
+            t2.Height = 60;
+            tabControl.Items.Add(t2);
+            TabItem activeTab = tabControl.Items[1] as TabItem;
+            activeTab.IsSelected = true;
+            msp.Children.Add(tc);
+        }
+
+
+
         private void EditRecord(object sender, RoutedEventArgs e)
         {
-            //if (DB.Instance.currentUser == null)
-            //{
-            //    MessageBox.Show("Please select a user!");
-            //    return;
-            //}
             Record record = datagrid.SelectedItem as Record;
             if (record == null)
             {
@@ -100,8 +187,8 @@ namespace Expenses
             }
             AddRecord editRecord = new AddRecord(record);
             editRecord.ShowDialog();
+            Refresh();
         }
-
 
         private List<Record> getItems(List<Category> cats)
         {
@@ -120,97 +207,121 @@ namespace Expenses
             return (records.OrderBy(x => x.Date).ToList());
         }
 
-        private void yearPicker_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void ChangeYear(object sender, SelectionChangedEventArgs e)
         {
-            if (yearPicker.SelectedIndex == -1)
+            TabControl tc = (TabControl)sender;
+            TabItem t = tc.SelectedItem as TabItem;
+            if (t == tc.Items[0])
+            {
+                back(null, null);
+            }
+            else if (t == tc.Items[tc.Items.Count - 1])
+            {
+                return;
+            }
+            if (!Int32.TryParse(t.Header.ToString(), out year))
             {
                 datagrid.ItemsSource = null;
                 currentLabel.Content = "current: 0.00";
                 paidLable.Content = "Paid: 0.00";
                 incomeLabel.Content = "Income: 0.00";
+                return;
             }
             else
             {
-                year = years[yearPicker.SelectedIndex];
                 records = getItems(DB.Instance.categories).Where(x => x.Date.Year == year).ToList();
                 months = records.Select(x => x.Date.Month).Distinct().ToList();
-                months.Add(0);
-                months.Sort();
-                month = 0;
-                for (int i = DateTime.Now.Date.Month; i > 0; i--)
+            }
+            if (t.Content is WrapPanel)
+            {
+                WrapPanel wrap = (WrapPanel)t.Content;
+                List<Picker> pickers = new List<Picker>();
+                foreach (Picker item in wrap.Children)
                 {
-                    if (months.Contains(i))
-                    {
-                        month = i;
-                        break;
-                    }
+                    pickers.Add(item);
                 }
-                monthPicker.ItemsSource = null;
-                monthPicker.ItemsSource = months;
-                monthPicker.SelectedIndex = months.IndexOf(month);
-                //MessageBox.Show(monthPicker.SelectedIndex.ToString());
+                pickers.OrderByDescending(x => x.RB.Content).Last().RB.IsChecked = true;
+                pickers.OrderByDescending(x => x.RB.Content).First().RB.IsChecked = true;
             }
         }
-
-        private void monthPicker_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void ChangeMonth(object sender, RoutedEventArgs e)
         {
-            if (monthPicker.SelectedIndex == -1) monthPicker.SelectedIndex = months.Count - 1;
-            else month = months[monthPicker.SelectedIndex];
-
+            month = 0;
+            RadioButton radioButton = sender as RadioButton;
+            if (!Int32.TryParse(radioButton.Content.ToString().Split(":")[0], out month))
+            {
+                return;
+            }
+            categories.Clear();
             if (month == 0)
             {
                 records = getItems(DB.Instance.categories).Where(x => x.Date.Year == year).ToList();
-                categories.Clear();
-                categories.Add("All");
                 categories.AddRange(records.Select(x => x.Category).Distinct());
-                catsComboBox.ItemsSource = categories;
-                catsComboBox.SelectedIndex = -1;
-                catsComboBox.SelectedIndex = 0;
 
             }
             else
             {
-                records = getItems(DB.Instance.categories).Where(x => x.Date.Year == year).ToList();
-                records = records.Where(x => x.Date.Month == month).ToList();
-                categories.Clear();
-                categories.Add("All");
+                records = getItems(DB.Instance.categories)
+                    .Where(x => x.Date.Year == year && x.Date.Month == month).ToList();
                 categories.AddRange(records.Select(x => x.Category).Distinct());
-                catsComboBox.ItemsSource = categories;
-                catsComboBox.SelectedIndex = -1;
-                catsComboBox.SelectedIndex = 0;
-
             }
-        }
-
-        private void catsComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (catsComboBox.SelectedIndex == -1) return;
-            string cat = catsComboBox.SelectedItem.ToString();
-            List<Record> innerRecords = records;
-            if (cat != "All")
+            categories.Add("All");
+            innerRecords = records;
+            footer.Children.Clear();
+            foreach (string category in categories)
             {
-                innerRecords = records.Where(x => x.Category == cat).ToList();
+                Checker checker = new Checker();
+                checker.CB.Content = category;
+                checker.CB.Checked += CatFilter;
+                checker.CB.Unchecked += CatFilter;
+                footer.Children.Add(checker);
+
             }
             datagrid.ItemsSource = null;
-            datagrid.ItemsSource = innerRecords;
+            datagrid.ItemsSource = records;
             income = records.Where(x => x.Transaction == cashFlow.Income).Select(x => x.Value).Sum();
             payments = records.Where(x => x.Transaction == cashFlow.Expense).Select(x => x.Value).Sum();
             current = income - payments;
             currentLabel.Content = "current: " + current.ToString();
             paidLable.Content = "Paid: " + payments.ToString();
             incomeLabel.Content = "Income: " + income.ToString();
-
-            //c.Binding = new Binding("Date");
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void CatFilter(object sender, RoutedEventArgs e)
+        {
+            List<string> openCats = new List<string>();
+            CheckBox CB = sender as CheckBox;
+            if (CB.Content == "All")
+            {
+                foreach (Checker checker in footer.Children)
+                {
+                    if (checker.CB.Content == "All") continue;
+                    checker.CB.IsChecked = CB.IsChecked;
+                }
+            }
+            else
+            {
+                foreach (Checker checker in footer.Children)
+                {
+                    CheckBox CB2 = checker.CB as CheckBox;
+                    if (CB2.IsChecked == false) innerRecords = innerRecords.Except(records.Where(x => x.Category == CB2.Content.ToString())).ToList();
+                    else innerRecords.AddRange(
+                        records.Where(x => x.Category == CB2.Content.ToString())
+                        );
+                }
+            }
+            datagrid.ItemsSource = null;
+            datagrid.ItemsSource = innerRecords.OrderBy(x => x.Date).Distinct();
+        }
+
+        private void back(object sender, RoutedEventArgs e)
         {
             MainWindow mw = new MainWindow();
             this.Close();
             mw.ShowDialog();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void DeleteRecord(object sender, RoutedEventArgs e)
         {
             var result = MessageBox.Show("Are you sure you want to delete the record?", "Delete! ", MessageBoxButton.YesNo, MessageBoxImage.Question);
             if (result == MessageBoxResult.Yes)
@@ -218,12 +329,9 @@ namespace Expenses
                 Record record = datagrid.SelectedItem as Record;
                 Category category = DB.flatten(DB.Instance.categories).Where(x => x.getFullName() == record.Category).FirstOrDefault();
                 category.RemoveItem(record);
-                int index = monthPicker.SelectedIndex;
-                monthPicker.SelectedIndex = 0;
-                monthPicker.SelectedIndex = index;
                 DB.Instance.sync();
             }
-
+            Refresh();
         }
     }
 }
